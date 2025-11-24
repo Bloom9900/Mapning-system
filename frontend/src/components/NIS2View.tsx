@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import SearchBar from "./SearchBar";
 import RowDetailsDrawer from "./RowDetailsDrawer";
 import type { MappingEntry } from "../types/mapping";
-import { loadNIS2Mappings, exportAsCSV, exportAsJSON } from "../services/dataService";
+import { loadNIS2Mappings } from "../services/dataService";
 
 type SortField = "nis2_article_ids" | "label" | "relationship_type" | null;
 type SortDirection = "asc" | "desc" | null;

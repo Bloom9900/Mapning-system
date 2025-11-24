@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import SearchBar from "./SearchBar";
 import RowDetailsDrawer from "./RowDetailsDrawer";
 import type { MappingEntry } from "../types/mapping";
-import { loadISOMappings, exportAsCSV, exportAsJSON } from "../services/dataService";
+import { loadISOMappings } from "../services/dataService";
 
 type SortField = "iso_27001_annex_a_ids" | "label" | "relationship_type" | null;
 type SortDirection = "asc" | "desc" | null;
