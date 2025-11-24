@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import SearchBar from "./SearchBar";
 import RowDetailsDrawer from "./RowDetailsDrawer";
 import type { MappingEntry } from "../types/mapping";
+import { loadNIS2Mappings, exportAsCSV, exportAsJSON } from "../services/dataService";
 
 type SortField = "nis2_article_ids" | "label" | "relationship_type" | null;
 type SortDirection = "asc" | "desc" | null;
@@ -18,14 +19,13 @@ export default function NIS2View() {
   // Load all NIS2 mappings on mount
   useEffect(() => {
     setLoading(true);
-    fetch("/api/nis2")
-      .then(res => res.json())
+    loadNIS2Mappings()
       .then(data => {
         setAllMappings(data);
         setLoading(false);
       })
       .catch(err => {
-        console.error("Error fetching NIS2 mappings:", err);
+        console.error("Error loading NIS2 mappings:", err);
         setLoading(false);
       });
   }, []);

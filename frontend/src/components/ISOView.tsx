@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import SearchBar from "./SearchBar";
 import RowDetailsDrawer from "./RowDetailsDrawer";
 import type { MappingEntry } from "../types/mapping";
+import { loadISOMappings, exportAsCSV, exportAsJSON } from "../services/dataService";
 
 type SortField = "iso_27001_annex_a_ids" | "label" | "relationship_type" | null;
 type SortDirection = "asc" | "desc" | null;
@@ -18,14 +19,13 @@ export default function ISOView() {
   // Load all ISO mappings on mount
   useEffect(() => {
     setLoading(true);
-    fetch("/api/iso")
-      .then(res => res.json())
+    loadISOMappings()
       .then(data => {
         setAllMappings(data);
         setLoading(false);
       })
       .catch(err => {
-        console.error("Error fetching ISO mappings:", err);
+        console.error("Error loading ISO mappings:", err);
         setLoading(false);
       });
   }, []);

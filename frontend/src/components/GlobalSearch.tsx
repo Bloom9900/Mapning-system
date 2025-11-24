@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import type { MappingEntry } from "../types/mapping";
+import { loadAllMappings } from "../services/dataService";
 
 interface GlobalSearchResult {
   framework: "CIS" | "ISO" | "NIS2";
@@ -23,23 +24,13 @@ export default function GlobalSearch() {
 
     const searchAll = async () => {
       try {
-        const [cisRes, isoRes, nis2Res] = await Promise.all([
-          fetch("/api/cis"),
-          fetch("/api/iso"),
-          fetch("/api/nis2")
-        ]);
-
-        const [cisData, isoData, nis2Data] = await Promise.all([
-          cisRes.json(),
-          isoRes.json(),
-          nis2Res.json()
-        ]);
-
+        const allMappings = await loadAllMappings();
         const lowerQuery = query.toLowerCase();
         const allResults: GlobalSearchResult[] = [];
 
-        // Search CIS
-        cisData.forEach((entry: MappingEntry) => {
+        // Search all mappings
+        allMappings.forEach((entry: MappingEntry) => {
+          // Search CIS
           const controlId = entry.cis_control_id?.toLowerCase() || "";
           const safeguardId = entry.cis_safeguard_id?.toLowerCase() || "";
           const label = entry.label?.toLowerCase() || "";
@@ -51,13 +42,9 @@ export default function GlobalSearch() {
               matchType: controlId.includes(lowerQuery) ? "Control ID" : safeguardId.includes(lowerQuery) ? "Safeguard ID" : "Title"
             });
           }
-        });
 
-        // Search ISO
-        isoData.forEach((entry: MappingEntry) => {
+          // Search ISO
           const annexAIds = entry.iso_27001_annex_a_ids.join(" ").toLowerCase();
-          const label = entry.label?.toLowerCase() || "";
-          
           if (annexAIds.includes(lowerQuery) || label.includes(lowerQuery)) {
             allResults.push({
               framework: "ISO",
@@ -65,13 +52,9 @@ export default function GlobalSearch() {
               matchType: annexAIds.includes(lowerQuery) ? "Annex A" : "Title"
             });
           }
-        });
 
-        // Search NIS2
-        nis2Data.forEach((entry: MappingEntry) => {
+          // Search NIS2
           const articleIds = entry.nis2_article_ids.join(" ").toLowerCase();
-          const label = entry.label?.toLowerCase() || "";
-          
           if (articleIds.includes(lowerQuery) || label.includes(lowerQuery)) {
             allResults.push({
               framework: "NIS2",

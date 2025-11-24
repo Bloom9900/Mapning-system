@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import SearchBar from "./SearchBar";
 import RowDetailsDrawer from "./RowDetailsDrawer";
 import type { MappingEntry } from "../types/mapping";
+import { loadCISMappings, exportAsCSV, exportAsJSON } from "../services/dataService";
 
 type SortField = "cis_control_id" | "cis_safeguard_id" | "label" | "relationship_type" | null;
 type SortDirection = "asc" | "desc" | null;
@@ -17,14 +18,13 @@ export default function CISView() {
   // Load all CIS mappings on mount
   useEffect(() => {
     setLoading(true);
-    fetch("/api/cis")
-      .then(res => res.json())
+    loadCISMappings()
       .then(data => {
         setAllMappings(data);
         setLoading(false);
       })
       .catch(err => {
-        console.error("Error fetching CIS mappings:", err);
+        console.error("Error loading CIS mappings:", err);
         setLoading(false);
       });
   }, []);
@@ -106,7 +106,11 @@ export default function CISView() {
   };
 
   const handleExport = (format: "csv" | "json") => {
-    window.open(`/api/export/${format}`, "_blank");
+    if (format === "csv") {
+      exportAsCSV(allMappings);
+    } else {
+      exportAsJSON(allMappings);
+    }
   };
 
   const copyToClipboard = (text: string) => {
