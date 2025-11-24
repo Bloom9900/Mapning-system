@@ -60,9 +60,11 @@ This automatically runs `export-data` first, then builds the frontend.
 1. Push your code to GitHub
 2. Go to [vercel.com](https://vercel.com)
 3. Import your repository
-4. Vercel will automatically detect the `vercel.json` configuration
-5. Make sure the build command is: `npm run build`
-6. Deploy!
+4. **Important**: In Vercel project settings, set:
+   - **Root Directory**: Leave as root (don't change to `frontend`)
+   - **Build Command**: `npm run build` (should auto-detect from vercel.json)
+   - **Output Directory**: `frontend/dist` (should auto-detect from vercel.json)
+5. Deploy!
 
 ## Important Notes
 
