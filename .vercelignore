@@ -3,4 +3,6 @@ node_modules/
 *.xlsx
 *.xls
 data/
+# Keep the exported JSON files - they're needed for the build
+!frontend/public/data/
 

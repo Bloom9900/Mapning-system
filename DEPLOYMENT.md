@@ -10,9 +10,9 @@ This application has been converted to a **frontend-only** application that can 
 
 ## Pre-Deployment Steps
 
-### 1. Export Data to JSON
+### 1. Export Data to JSON (Local Development)
 
-Before building, you need to export the mapping data from the XLSX files to JSON:
+Before deploying, export the mapping data from the XLSX files to JSON:
 
 ```bash
 npm run export-data
@@ -23,13 +23,25 @@ This will:
 - Process and merge the data
 - Export JSON files to `frontend/public/data/`
 
-### 2. Build the Frontend
+### 2. Commit the Data Files
+
+**IMPORTANT**: Make sure to commit the exported JSON files to git:
 
 ```bash
+git add frontend/public/data/*.json
+git commit -m "Update mapping data"
+```
+
+These files are needed for the Vercel build and must be in the repository.
+
+### 3. Build the Frontend (Optional - for testing)
+
+```bash
+cd frontend
 npm run build
 ```
 
-This automatically runs `export-data` first, then builds the frontend.
+Note: The Vercel build will automatically build the frontend. You don't need to build locally before deploying.
 
 ## Deploying to Vercel
 
@@ -60,11 +72,13 @@ This automatically runs `export-data` first, then builds the frontend.
 1. Push your code to GitHub
 2. Go to [vercel.com](https://vercel.com)
 3. Import your repository
-4. **Important**: In Vercel project settings, set:
-   - **Root Directory**: Leave as root (don't change to `frontend`)
-   - **Build Command**: `npm run build` (should auto-detect from vercel.json)
-   - **Output Directory**: `frontend/dist` (should auto-detect from vercel.json)
+4. **IMPORTANT**: In Vercel project settings → General → Root Directory:
+   - Set **Root Directory** to: `frontend`
+   - This tells Vercel to treat the `frontend` folder as the project root
+   - The build command and output directory will then be relative to `frontend`
 5. Deploy!
+
+**Note**: The `vercel.json` is configured to work with `rootDirectory: "frontend"`. If you don't set this in the dashboard, the build will fail.
 
 ## Important Notes
 
