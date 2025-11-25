@@ -1,0 +1,3008 @@
+[
+  {
+    "id": "CIS_ISO_1764086899338_0",
+    "cis_control_id": "1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Inventory and Control of Enterprise Assets"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_2",
+    "cis_control_id": "1",
+    "cis_safeguard_id": "1.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.9",
+      "A.8.8"
+    ],
+    "nis2_article_ids": [
+      "12.4.1",
+      "12.4.2",
+      "12.4.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise’s network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall develop and maintain a complete, accurate, up-to-date and consistent inventory of their assets. They shall record changes to the entries in the inventory in a traceable manner.\n\n---\n\n[NIS2] The granularity of the inventory of the assets shall be at a level appropriate for the needs of the relevant entities. The inventory shall include the following:\r\n(a) the list of operations and services and their description,\r\n(b) the list of network and information systems and other associated assets supporting the entities’ operations and services.\n\n---\n\n[NIS2] The relevant entities shall regularly review and update the inventory and their assets and document the history of changes.",
+    "label": "Establish and Maintain Detailed Enterprise Asset Inventory"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_4",
+    "cis_control_id": "1",
+    "cis_safeguard_id": "1.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.",
+    "label": "Address Unauthorized Assets"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_5",
+    "cis_control_id": "1",
+    "cis_safeguard_id": "1.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Utilize an active discovery tool to identify assets connected to the enterprise’s network. Configure the active discovery tool to execute daily, or more frequently.",
+    "label": "Utilize an Active Discovery Tool"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_6",
+    "cis_control_id": "1",
+    "cis_safeguard_id": "1.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise’s asset inventory. Review and use logs to update the enterprise’s asset inventory weekly, or more frequently.",
+    "label": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_7",
+    "cis_control_id": "1",
+    "cis_safeguard_id": "1.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Use a passive discovery tool to identify assets connected to the enterprise’s network. Review and use scans to update the enterprise’s asset inventory at least weekly, or more frequently.",
+    "label": "Use a Passive Asset Discovery Tool"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_8",
+    "cis_control_id": "2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Inventory and Control of Software Assets"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_10",
+    "cis_control_id": "2",
+    "cis_safeguard_id": "2.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.9"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Establish and maintain a detailed inventory of all licensed software installed on enterprise assets. The software inventory must document the title, publisher, initial install/use date, and business purpose for each entry; where appropriate, include the Uniform Resource Locator (URL), app store(s), version(s), deployment mechanism, and decommission date. Review and update the software inventory bi-annually, or more frequently.",
+    "label": "Establish and Maintain a Software Inventory"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_11",
+    "cis_control_id": "2",
+    "cis_safeguard_id": "2.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [
+      "6.6.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "[NIS2] Ensure that only currently supported software is designated as authorized in the software inventory for enterprise assets. If software is unsupported, yet necessary for the fulfillment of the enterprise’s mission, document an exception detailing mitigating controls and residual risk acceptance. For any unsupported software without an exception documentation, designate as unauthorized. Review the software list to verify software support at least monthly, or more frequently.\n\n---\n\n[NIS2] By way of derogation from point 1(a), the relevant entities may choose not to apply security patches when the disadvantages of applying the security patches outweigh the cybersecurity benefits. The relevant entities shall duly document and substantiate the reasons for any such decision.",
+    "label": "Ensure Authorized Software is Currently Supported"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_12",
+    "cis_control_id": "2",
+    "cis_safeguard_id": "2.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Ensure that unauthorized software is either removed from use on enterprise assets or receives a documented exception. Review monthly, or more frequently.",
+    "label": "Address Unauthorized Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_13",
+    "cis_control_id": "2",
+    "cis_safeguard_id": "2.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Utilize software inventory tools, when possible, throughout the enterprise to automate the discovery and documentation of installed software.",
+    "label": "Utilize Automated Software Inventory Tools"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_14",
+    "cis_control_id": "2",
+    "cis_safeguard_id": "2.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.19",
+      "A.8.7"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Use technical controls, such as application allowlisting, to ensure that only authorized software can execute or be accessed. Reassess bi-annually, or more frequently.",
+    "label": "Allowlist Authorized Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_16",
+    "cis_control_id": "2",
+    "cis_safeguard_id": "2.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.19"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Use technical controls to ensure that only authorized software libraries, such as specific .dll, .ocx,  and .so files, are allowed to load into a system process. Block unauthorized libraries from loading into a system process. Reassess bi-annually, or more frequently.",
+    "label": "Allowlist Authorized Libraries"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_17",
+    "cis_control_id": "2",
+    "cis_safeguard_id": "2.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Use technical controls, such as digital signatures and version control, to ensure that only authorized scripts, such as specific .ps1, and .py files are allowed to execute. Block unauthorized scripts from executing. Reassess bi-annually, or more frequently.",
+    "label": "Allowlist Authorized Scripts"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_18",
+    "cis_control_id": "3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Data Protection"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_20",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.10",
+      "A.5.9",
+      "A.8.1"
+    ],
+    "nis2_article_ids": [
+      "12.2.1",
+      "12.2.2",
+      "12.2.3",
+      "9.1.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain a documented data management process. In the process, address data sensitivity, data owner, handling of data, data retention limits, and disposal requirements, based on sensitivity and retention standards for the enterprise. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] For the purpose of Article 21(2), point (h) of Directive (EU) 2022/2555, the relevant entities shall establish, implement and apply a policy and procedures related to cryptography, with a view to ensuring adequate and effective use of cryptography to protect the confidentiality, authenticity and integrity of information in line with the relevant entities’ information classification and the results of the risk assessment.\n\n---\n\n[NIS2] The relevant entities shall establish, implement and apply a policy for the proper handling of information and assets in accordance with their network and information security policy, and shall communicate the policy to anyone who uses or handles information and assets.\n\n---\n\n[NIS2] The policy shall:\r\n(a) cover the entire life cycle of the information and assets, including acquisition, use, storage, transportation and disposal;\r\n(b) provide instructions on the safe use, safe storage, safe transport, and the irretrievable deletion and destruction of the information and assets;\r\n(c) provide that equipment, hardware, software and data may be transferred to external premises only after approval by bodies authorised by management bodies in accordance with the policies,\r\n(d) provide that the transfer shall take place in a secure manner, in accordance with the type of asset or information to be transferred.\n\n---\n\n[NIS2] The relevant entities shall review and, where appropriate, update the policy at planned intervals and when significant incidents or significant changes to operations or risks occur",
+    "label": "Establish and Maintain a Data Management Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_23",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.9"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Establish and maintain a data inventory based on the enterprise’s data management process. Inventory sensitive data, at a minimum. Review and update inventory annually, at a minimum, with a priority on sensitive data.",
+    "label": "Establish and Maintain a Data Inventory"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_24",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.10",
+      "A.5.15",
+      "A.8.3",
+      "A.8.4"
+    ],
+    "nis2_article_ids": [
+      "11.1.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Configure data access control lists based on a user’s need to know. Apply data access control lists, also known as access permissions, to local and remote file systems, databases, and applications.\n\n---\n\n[NIS2] For the purpose of Article 21(2), point (i) of Directive (EU) 2022/2555, the relevant entities shall establish, document and implement logical and physical access control policies for the access of persons and processes on network and information systems, based on business requirements as well as network and information system security requirements.",
+    "label": "Configure Data Access Control Lists"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_28",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.33"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Retain data according to the enterprise’s documented data management process. Data retention must include both minimum and maximum timelines.",
+    "label": "Enforce Data Retention"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_29",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.10"
+    ],
+    "nis2_article_ids": [
+      "12.2.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Securely dispose of data as outlined in the enterprise’s documented data management process. Ensure the disposal process and method are commensurate with the data sensitivity.\n\n---\n\n[NIS2] The policy shall:\r\n(a) cover the entire life cycle of the information and assets, including acquisition, use, storage, transportation and disposal;\r\n(b) provide instructions on the safe use, safe storage, safe transport, and the irretrievable deletion and destruction of the information and assets;\r\n(c) provide that equipment, hardware, software and data may be transferred to external premises only after approval by bodies authorised by management bodies in accordance with the policies,\r\n(d) provide that the transfer shall take place in a secure manner, in accordance with the type of asset or information to be transferred.",
+    "label": "Securely Dispose of Data"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_30",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.7",
+      "A.8.1"
+    ],
+    "nis2_article_ids": [
+      "9.1.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Encrypt data on end-user devices containing sensitive data. Example implementations can include: Windows BitLocker®, Apple FileVault®, Linux® dm-crypt.\n\n---\n\n[NIS2] For the purpose of Article 21(2), point (h) of Directive (EU) 2022/2555, the relevant entities shall establish, implement and apply a policy and procedures related to cryptography, with a view to ensuring adequate and effective use of cryptography to protect the confidentiality, authenticity and integrity of information in line with the relevant entities’ information classification and the results of the risk assessment.",
+    "label": "Encrypt Data on End-User Devices"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_32",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.12",
+      "A.5.13",
+      "A.5.33",
+      "A.5.9",
+      "A.8.12"
+    ],
+    "nis2_article_ids": [
+      "12.1.1",
+      "12.1.2",
+      "12.1.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain an overall data classification scheme for the enterprise. Enterprises may use labels, such as “Sensitive,” “Confidential,” and “Public,” and classify their data according to those labels. Review and update the classification scheme annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] For the purpose of Article 21(2), point (i) of Directive (EU) 2022/2555, the relevant entities shall lay down classification levels of all information and assets in scope of their network and information systems for the level of protection required.\n\n---\n\n[NIS2] For the purpose of point 12.1.1., the relevant entities shall:\r\n(a) lay down a system of classification levels for information and assets;\r\n(b) associate all information and assets with a classification level, based on confidentiality, integrity, authenticity and availability requirements, to indicate the protection required according to their sensitivity, criticality, risk and business value,\r\n(c) align the availability requirements of the information and assets with the delivery and recovery objectives set out in their business and disaster recovery plans.\n\n---\n\n[NIS2] The relevant entities shall conduct periodic reviews of the classification levels of information and assets and update them, where appropriate.",
+    "label": "Establish and Maintain a Data Classification Scheme"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_37",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.14"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Document data flows. Data flow documentation includes service provider data flows and should be based on the enterprise’s data management process. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "label": "Document Data Flows"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_38",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.9",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.14"
+    ],
+    "nis2_article_ids": [
+      "12.3.1",
+      "12.3.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Encrypt data on removable media.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall establish, implement and apply a policy on the management of removable storage media and communicate it to their employees and third parties who handle removable storage media at the relevant entities’ premises or other locations where the removable media is connected to the relevant entities’ network and information systems.\n\n---\n\n[NIS2] The policy shall:\r\n(a) provide for a technical prohibition of the connection of removable media unless there is an organisational reason for their use;\r\n(b) provide for disabling self-execution from such media and scanning the media for malicious code before they are used on the entities’ systems;\r\n(c) provide measures for controlling and protecting portable storage devices containing data while in transit and in storage;\r\n(d) where appropriate, provide measures for the use of cryptographic techniques to protect information on removable storage media.",
+    "label": "Encrypt Data on Removable Media"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_39",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.10",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.14"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Encrypt sensitive data in transit. Example implementations can include: Transport Layer Security (TLS) and Open Secure Shell (OpenSSH).",
+    "label": "Encrypt Sensitive Data in Transit"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_40",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.11",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.33"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Encrypt sensitive data at rest on servers, applications, and databases. Storage-layer encryption, also known as server-side encryption, meets the minimum requirement of this Safeguard. Additional encryption methods may include application-layer encryption, also known as client-side encryption, where access to the data storage device(s) does not permit access to the plain-text data.",
+    "label": "Encrypt Sensitive Data at Rest"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_41",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.12",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.20",
+      "A.8.22"
+    ],
+    "nis2_article_ids": [
+      "11.4.1",
+      "11.4.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Segment data processing and storage based on the sensitivity of the data. Do not process sensitive data on enterprise assets intended for lower sensitivity data.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall restrict and control the use of system administration systems.\n\n---\n\n[NIS2] For that purpose, the relevant entities shall:\r\n(a) only use system administration systems for system administration purposes, and not for any other operations;\r\n(b) separate logically such systems from application software not used for system administrative purposes,\r\n(c) protect access to system administration systems through authentication and encryption.",
+    "label": "Segment Data Processing and Storage Based on Sensitivity"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_43",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.13",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.14",
+      "A.8.12"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Implement an automated tool, such as a host-based Data Loss Prevention (DLP) tool to identify all sensitive data stored, processed, or transmitted through enterprise assets, including those located onsite or at a remote service provider, and update the enterprise's  data inventory.",
+    "label": "Deploy a Data Loss Prevention Solution"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_45",
+    "cis_control_id": "3",
+    "cis_safeguard_id": "3.14",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.15"
+    ],
+    "nis2_article_ids": [
+      "3.2.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Log sensitive data access, including modification and disposal.\n\n---\n\n[NIS2] The relevant entities shall maintain, document, and review logs. Logs shall include:\r\n(a) outbound and inbound network traffic; EN 5 EN\r\n(b) creation, modification or deletion of users of the relevant entities’ network and information systems and extension of the permissions;\r\n(c) access to systems and applications;\r\n(d) authentication-related events;\r\n(e) all privileged access to systems and applications, and activities performed by administrative accounts;\r\n(f) access or changes to critical configuration and backup files;\r\n(g) event logs and logs from security tools, such as antivirus, intrusion detection systems or firewalls;\r\n(h) use of system resources, as well as their performance;\r\n(i) physical access to facilities, where appropriate;\r\n(j) access to and use of their network equipment and devices;\r\n(k) activation, stopping and pausing of the various logs;\r\n(l) environmental events, such as flooding alarms, where appropriate.",
+    "label": "Log Sensitive Data Access"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_46",
+    "cis_control_id": "4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Secure Configuration of Enterprise Assets and Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_48",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.1",
+      "A.8.5",
+      "A.8.9"
+    ],
+    "nis2_article_ids": [
+      "11.6.2",
+      "6.3.1",
+      "6.3.2",
+      "6.3.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain a documented secure configuration process for enterprise assets (end-user devices, including portable and mobile, non-computing/IoT devices, and servers) and software (operating systems and applications). Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[CIS] Enforce automatic device lockout following a predetermined threshold of local failed authentication attempts on portable end-user devices, where supported. For laptops, do not allow more than 20 failed authentication attempts; for tablets and smartphones, no more than 10 failed authentication attempts. Example implementations include Microsoft® InTune Device Lock and Apple® Configuration Profile maxFailedAttempts.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall establish, document, implement, and monitor configurations, including security configurations of hardware, software, services and networks.\n\n---\n\n[NIS2] For the purpose of point 6.3.1., the relevant entities shall:\r\n(a) lay down configurations, including security configurations, for their hardware, software, services and networks;\r\n(b) lay down and implement processes and tools to enforce the laid down configurations, including security configurations, for hardware, software, services and networks, for newly installed systems as well as for operational systems over their lifetime.\n\n---\n\n[NIS2] The relevant entities shall review and, where appropriate, update configurations at planned intervals or when significant incidents or significant changes to operations or risks occur\n\n---\n\n[NIS2] For that purpose, the relevant entities shall:\r\n(a) ensure the strength of authentication is appropriate to the classification of the asset to be accessed;\r\n(b) control the allocation to users and management of secret authentication information by a process that ensures the confidentiality of the information, including advising personnel on appropriate handling of authentication information;\r\n(c) require the change of authentication credentials initially, and when suspicion that the credential is revealed to an unauthorised person;\r\n(d) require the reset of authentication credentials and the blocking of users after a predefined number of unsuccessful log-in attempts;\r\n(e) terminate inactive sessions after a predefined period of inactivity; and\r\n(f) require separate credentials to access privileged access or administrative accounts.",
+    "label": "Enforce Automatic Device Lockout on Portable End-User Devices"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_50",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.9"
+    ],
+    "nis2_article_ids": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain a documented secure configuration process for network devices. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall establish, document, implement, and monitor configurations, including security configurations of hardware, software, services and networks.\n\n---\n\n[NIS2] For the purpose of point 6.3.1., the relevant entities shall:\r\n(a) lay down configurations, including security configurations, for their hardware, software, services and networks;\r\n(b) lay down and implement processes and tools to enforce the laid down configurations, including security configurations, for hardware, software, services and networks, for newly installed systems as well as for operational systems over their lifetime.\n\n---\n\n[NIS2] The relevant entities shall review and, where appropriate, update configurations at planned intervals or when significant incidents or significant changes to operations or risks occur",
+    "label": "Establish and Maintain a Secure Configuration Process for Network Infrastructure"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_51",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.5",
+      "A.8.9"
+    ],
+    "nis2_article_ids": [
+      "11.6.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Configure automatic session locking on enterprise assets after a defined period of inactivity. For general purpose operating systems, the period must not exceed 15 minutes. For mobile end-user devices, the period must not exceed 2 minutes.\n\n---\n\n[NIS2] For that purpose, the relevant entities shall:\r\n(a) ensure the strength of authentication is appropriate to the classification of the asset to be accessed;\r\n(b) control the allocation to users and management of secret authentication information by a process that ensures the confidentiality of the information, including advising personnel on appropriate handling of authentication information;\r\n(c) require the change of authentication credentials initially, and when suspicion that the credential is revealed to an unauthorised person;\r\n(d) require the reset of authentication credentials and the blocking of users after a predefined number of unsuccessful log-in attempts;\r\n(e) terminate inactive sessions after a predefined period of inactivity; and\r\n(f) require separate credentials to access privileged access or administrative accounts.",
+    "label": "Configure Automatic Session Locking on Enterprise Assets"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_53",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Implement and manage a firewall on servers, where supported. Example implementations include a virtual firewall, operating system firewall, or a third-party firewall agent.",
+    "label": "Implement and Manage a Firewall on Servers"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_54",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.7",
+      "A.8.1"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Implement and manage a host-based firewall or port-filtering tool on end-user devices, with a default-deny rule that drops all traffic except those services and ports that are explicitly allowed.",
+    "label": "Implement and Manage a Firewall on End-User Devices"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_56",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Securely manage enterprise assets and software. Example implementations include managing configuration through version-controlled Infrastructure-as-Code (IaC) and accessing administrative interfaces over secure network protocols, such as Secure Shell (SSH) and Hypertext Transfer Protocol Secure (HTTPS). Do not use insecure management protocols, such as Telnet (Teletype Network) and HTTP, unless operationally essential.",
+    "label": "Securely Manage Enterprise Assets and Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_57",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.2",
+      "A.8.9"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Manage default accounts on enterprise assets and software, such as root, administrator, and other pre-configured vendor accounts. Example implementations can include: disabling default accounts or making them unusable.",
+    "label": "Manage Default Accounts on Enterprise Assets and Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_59",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.9"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Uninstall or disable unnecessary services on enterprise assets and software, such as an unused file sharing service, web application module, or service function.",
+    "label": "Uninstall or Disable Unnecessary Services on Enterprise Assets and Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_60",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.9",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Configure trusted DNS servers on network infrastructure. Example implementations include configuring network devices to use enterprise-controlled DNS servers and/or reputable externally accessible DNS servers.",
+    "label": "Configure Trusted DNS Servers on Enterprise Assets"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_62",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.11",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.1",
+      "A.8.10"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Remotely wipe enterprise data from enterprise-owned portable end-user devices when deemed appropriate such as lost or stolen devices, or when an individual no longer supports the enterprise.",
+    "label": "Enforce Remote Wipe Capability on Portable End-User Devices"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_64",
+    "cis_control_id": "4",
+    "cis_safeguard_id": "4.12",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.7",
+      "A.8.1"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Ensure separate enterprise workspaces are used on mobile end-user devices, where supported. Example implementations include using an Apple® Configuration Profile or Android™ Work Profile to separate enterprise applications and data from personal applications and data.",
+    "label": "Separate Enterprise Workspaces on Mobile End-User Devices"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_66",
+    "cis_control_id": "5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Account Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_68",
+    "cis_control_id": "5",
+    "cis_safeguard_id": "5.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.16"
+    ],
+    "nis2_article_ids": [
+      "11.5.1",
+      "11.6.4"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator accounts, and service accounts. The inventory, at a minimum, should contain the person’s name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall manage the full life cycle of identities of network and information systems and their users.\n\n---\n\n[NIS2] The relevant entities shall regularly review the identities and, if no longer needed, deactivate them without delay.",
+    "label": "Establish and Maintain an Inventory of Accounts"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_69",
+    "cis_control_id": "5",
+    "cis_safeguard_id": "5.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.17"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA.",
+    "label": "Use Unique Passwords"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_70",
+    "cis_control_id": "5",
+    "cis_safeguard_id": "5.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported.",
+    "label": "Disable Dormant Accounts"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_71",
+    "cis_control_id": "5",
+    "cis_safeguard_id": "5.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.15",
+      "A.8.2"
+    ],
+    "nis2_article_ids": [
+      "11.3.2",
+      "11.6.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user’s primary, non-privileged account.\n\n---\n\n[NIS2] [NIS2] The policies referred to in point 11.3.1. shall:\r\n(a) establish strong identification, authentication such as multi-factor authentication, and authorisation procedures for privileged accounts and system administration accounts;\r\n(b) set up specific accounts to be used for system administration operations exclusively, such as installation, configuration, management or maintenance;\r\n(c) individualise and restrict system administration privileges to the highest extent possible,\r\n(d) provide that system administration accounts are only used to connect to system administration systems.\n\n---\n\n[NIS2] For that purpose, the relevant entities shall:\r\n(a) ensure the strength of authentication is appropriate to the classification of the asset to be accessed;\r\n(b) control the allocation to users and management of secret authentication information by a process that ensures the confidentiality of the information, including advising personnel on appropriate handling of authentication information;\r\n(c) require the change of authentication credentials initially, and when suspicion that the credential is revealed to an unauthorised person;\r\n(d) require the reset of authentication credentials and the blocking of users after a predefined number of unsuccessful log-in attempts;\r\n(e) terminate inactive sessions after a predefined period of inactivity; and\r\n(f) require separate credentials to access privileged access or administrative accounts.",
+    "label": "Restrict Administrator Privileges to Dedicated Administrator Accounts"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_73",
+    "cis_control_id": "5",
+    "cis_safeguard_id": "5.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.15",
+      "A.8.18"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+    "label": "Establish and Maintain an Inventory of Service Accounts"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_75",
+    "cis_control_id": "5",
+    "cis_safeguard_id": "5.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.15"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Centralize account management through a directory or identity service.",
+    "label": "Centralize Account Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_76",
+    "cis_control_id": "6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Access Control Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_78",
+    "cis_control_id": "6",
+    "cis_safeguard_id": "6.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.15",
+      "A.5.16",
+      "A.5.18"
+    ],
+    "nis2_article_ids": [
+      "11.2.1",
+      "11.2.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall provide, modify, remove and document access rights to network and information systems in accordance with the access control policy referred to in point 11.1.\n\n---\n\n[NIS2] The relevant entities shall:\r\n(a) assign and revoke access rights based on the principles of need-to-know, least privilege and separation of duties;\r\n(b) ensure that access rights are modified accordingly upon termination or change of employment;\r\n(c) ensure that access to network and information systems is authorised by their owner;\r\n(d) ensure that access rights appropriately address third-party access, such as suppliers and service providers, in particular by limiting access rights in scope and in duration; EN 21 EN\r\n(e) maintain a register of access rights granted;\r\n(f) apply logging to the management of access rights.",
+    "label": "Establish an Access Granting Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_81",
+    "cis_control_id": "6",
+    "cis_safeguard_id": "6.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.16",
+      "A.5.18",
+      "A.6.5"
+    ],
+    "nis2_article_ids": [
+      "10.3.2",
+      "11.2.1",
+      "11.2.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.\n\n---\n\n[NIS2] [NIS2] For the purpose of point 10.3.1., the relevant entities shall:\r\n(a) include in the individual’s terms and conditions of employment, contract or agreement the responsibilities and duties that are still valid after termination of employment or contract, such as confidentiality clauses;\r\n(b) put in place access control policies which ensure that access rights are modified accordingly upon the individual’s termination or change of employment;\r\n(c) ensure that, after a change of employment, the employee can perform the new tasks.\n\n---\n\n[NIS2] The relevant entities shall provide, modify, remove and document access rights to network and information systems in accordance with the access control policy referred to in point 11.1.\n\n---\n\n[NIS2] The relevant entities shall:\r\n(a) assign and revoke access rights based on the principles of need-to-know, least privilege and separation of duties;\r\n(b) ensure that access rights are modified accordingly upon termination or change of employment;\r\n(c) ensure that access to network and information systems is authorised by their owner;\r\n(d) ensure that access rights appropriately address third-party access, such as suppliers and service providers, in particular by limiting access rights in scope and in duration; EN 21 EN\r\n(e) maintain a register of access rights granted;\r\n(f) apply logging to the management of access rights.",
+    "label": "Establish an Access Revoking Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_84",
+    "cis_control_id": "6",
+    "cis_safeguard_id": "6.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.15"
+    ],
+    "nis2_article_ids": [
+      "11.7.1",
+      "11.7.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall ensure that users are authenticated by multiple authentication factors or continuous authentication mechanisms for accessing the entities’ network and information systems, where appropriate, in accordance with the classification of the asset to be accessed.\n\n---\n\n[NIS2] The relevant entities shall ensure that the strength of authentication is appropriate for the classification of the asset to be accessed.",
+    "label": "Require MFA for Externally-Exposed Applications"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_85",
+    "cis_control_id": "6",
+    "cis_safeguard_id": "6.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.7"
+    ],
+    "nis2_article_ids": [
+      "11.7.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Require MFA for remote network access.\n\n---\n\n[NIS2] The relevant entities shall ensure that users are authenticated by multiple authentication factors or continuous authentication mechanisms for accessing the entities’ network and information systems, where appropriate, in accordance with the classification of the asset to be accessed.",
+    "label": "Require MFA for Remote Network Access"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_86",
+    "cis_control_id": "6",
+    "cis_safeguard_id": "6.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.2"
+    ],
+    "nis2_article_ids": [
+      "11.3.2",
+      "11.7.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.\n\n---\n\n[NIS2] [NIS2] The policies referred to in point 11.3.1. shall:\r\n(a) establish strong identification, authentication such as multi-factor authentication, and authorisation procedures for privileged accounts and system administration accounts;\r\n(b) set up specific accounts to be used for system administration operations exclusively, such as installation, configuration, management or maintenance;\r\n(c) individualise and restrict system administration privileges to the highest extent possible,\r\n(d) provide that system administration accounts are only used to connect to system administration systems.\n\n---\n\n[NIS2] The relevant entities shall ensure that the strength of authentication is appropriate for the classification of the asset to be accessed.",
+    "label": "Require MFA for Administrative Access"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_87",
+    "cis_control_id": "6",
+    "cis_safeguard_id": "6.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.5"
+    ],
+    "nis2_article_ids": [
+      "11.6.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain an inventory of the enterprise’s authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.\n\n---\n\n[NIS2] The relevant entities shall implement secure authentication procedures and technologies based on access restrictions and the policy on access control.",
+    "label": "Establish and Maintain an Inventory of Authentication and Authorization Systems"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_88",
+    "cis_control_id": "6",
+    "cis_safeguard_id": "6.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.18"
+    ],
+    "nis2_article_ids": [
+      "11.6.1",
+      "11.6.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall implement secure authentication procedures and technologies based on access restrictions and the policy on access control.\n\n---\n\n[NIS2] The relevant entities shall use state-of-the-art authentication methods, in accordance with the associated assessed risk and the classification of the asset to be accessed, and unique authentication information.",
+    "label": "Centralize Access Control"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_89",
+    "cis_control_id": "6",
+    "cis_safeguard_id": "6.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.15",
+      "A.5.3",
+      "A.8.2",
+      "A.8.3"
+    ],
+    "nis2_article_ids": [
+      "1.2.6",
+      "11.1.1",
+      "11.2.3",
+      "11.3.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Superset",
+    "notes": "[CIS] Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.\n\n---\n\n[NIS2] [NIS2] Roles, responsibilities and authorities shall be reviewed and, where appropriate, updated by management bodies at planned intervals and when significant incidents or significant changes to operations or risks occur.\n\n---\n\n[NIS2] For the purpose of Article 21(2), point (i) of Directive (EU) 2022/2555, the relevant entities shall establish, document and implement logical and physical access control policies for the access of persons and processes on network and information systems, based on business requirements as well as network and information system security requirements.\n\n---\n\n[NIS2] The relevant entities shall review access rights at planned intervals and shall modify them based on organisational changes. The relevant entities shall document the results of the review including the necessary changes of access rights.\n\n---\n\n[NIS2] The relevant entities shall review access rights of privileged accounts and system administration accounts at planned intervals and be modified based on organisational changes, and shall document the results of the review, including the necessary changes of access rights.",
+    "label": "Define and Maintain Role-Based Access Control"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_93",
+    "cis_control_id": "7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Continuous Vulnerability Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_95",
+    "cis_control_id": "7",
+    "cis_safeguard_id": "7.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [
+      "6.10.1",
+      "6.10.4",
+      "6.6.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall specify and apply procedures for ensuring that:\r\n(a) security patches are applied within a reasonable time after they become available;\r\n(b) security patches are tested before being applied in production systems;\r\n(c) security patches come from trusted sources and are checked for integrity;\r\n(d) additional measures are implemented and residual risks are accepted in cases where a patch is not available or not applied pursuant to point 6.6.2.\n\n---\n\n[NIS2] The relevant entities shall obtain information about technical vulnerabilities in their network and information systems, evaluate their exposure to such vulnerabilities, and take appropriate measures to manage the vulnerabilities.\n\n---\n\n[NIS2] The relevant entities shall review and, where appropriate, update at planned intervals the channels they use for monitoring vulnerability information.",
+    "label": "Establish and Maintain a Vulnerability Management Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_96",
+    "cis_control_id": "7",
+    "cis_safeguard_id": "7.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [
+      "6.10.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.\n\n---\n\n[NIS2] When justified by the potential impact of the vulnerability, the relevant entities shall create and implement a plan to mitigate the vulnerability. In other cases, the relevant entities shall document and substantiate the reason why the vulnerability does not require remediation.",
+    "label": "Establish and Maintain a Remediation Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_97",
+    "cis_control_id": "7",
+    "cis_safeguard_id": "7.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+    "label": "Perform Automated Operating System Patch Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_98",
+    "cis_control_id": "7",
+    "cis_safeguard_id": "7.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+    "label": "Perform Automated Application Patch Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_99",
+    "cis_control_id": "7",
+    "cis_safeguard_id": "7.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [
+      "6.10.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans.\n\n---\n\n[NIS2] For the purpose of point 6.10.1., the relevant entities shall:\r\n(a) monitor information about vulnerabilities through appropriate channels, such as announcements of CSIRTs, competent authorities or information provided by suppliers or service providers.\r\n(b) perform, where appropriate, vulnerability scans, and record evidence of the results of the scans, at planned intervals;\r\n(c) address, without undue delay, vulnerabilities identified by the relevant entities as critical to their operations;\r\n(d) ensure that their vulnerability handling is compatible with their change management and incident management procedures;\r\n(e) lay down a procedure for disclosing vulnerabilities in accordance with the applicable national coordinated vulnerability disclosure policy.",
+    "label": "Perform Automated Vulnerability Scans of Internal Enterprise Assets"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_100",
+    "cis_control_id": "7",
+    "cis_safeguard_id": "7.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [
+      "6.10.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis.\n\n---\n\n[NIS2] For the purpose of point 6.10.1., the relevant entities shall:\r\n(a) monitor information about vulnerabilities through appropriate channels, such as announcements of CSIRTs, competent authorities or information provided by suppliers or service providers.\r\n(b) perform, where appropriate, vulnerability scans, and record evidence of the results of the scans, at planned intervals;\r\n(c) address, without undue delay, vulnerabilities identified by the relevant entities as critical to their operations;\r\n(d) ensure that their vulnerability handling is compatible with their change management and incident management procedures;\r\n(e) lay down a procedure for disclosing vulnerabilities in accordance with the applicable national coordinated vulnerability disclosure policy.",
+    "label": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_101",
+    "cis_control_id": "7",
+    "cis_safeguard_id": "7.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [
+      "6.10.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process.\n\n---\n\n[NIS2] When justified by the potential impact of the vulnerability, the relevant entities shall create and implement a plan to mitigate the vulnerability. In other cases, the relevant entities shall document and substantiate the reason why the vulnerability does not require remediation.",
+    "label": "Remediate Detected Vulnerabilities"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_102",
+    "cis_control_id": "8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Audit Log Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_104",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.28",
+      "A.8.15"
+    ],
+    "nis2_article_ids": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.5",
+      "3.2.7"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Equivalent",
+    "notes": "[CIS] Establish and maintain a documented audit log management process that defines the enterprise’s logging requirements. At a minimum, address the collection, review, and retention of audit logs for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[CIS] Retain audit logs across enterprise assets for a minimum of 90 days.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall lay down procedures and use tools to monitor and log activities on their network and information systems to detect events that could be considered as incidents and respond accordingly to mitigate the impact.\n\n---\n\n[NIS2] To the extent feasible, monitoring shall be automated and carried out either continuously or in periodic intervals, subject to business capabilities. The relevant entities shall implement their monitoring activities in a way which minimises false positives and false negatives.\n\n---\n\n[NIS2] The procedures as well as the list of assets that are being logged shall be reviewed and, where appropriate, updated at regular intervals and after significant incidents.\n\n---\n\n[NIS2] The relevant entities shall maintain and back up logs for a predefined period and shall store the logs at a central location and protect them from unauthorised access or changes.",
+    "label": "Establish and Maintain an Audit Log Management Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_105",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.15",
+      "A.8.20"
+    ],
+    "nis2_article_ids": [
+      "3.2.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Collect audit logs. Ensure that logging, per the enterprise’s audit log management process, has been enabled across enterprise assets.\n\n---\n\n[NIS2] The relevant entities shall lay down procedures and use tools to monitor and log activities on their network and information systems to detect events that could be considered as incidents and respond accordingly to mitigate the impact.",
+    "label": "Collect Audit Logs"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_107",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.6"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Ensure that logging destinations maintain adequate storage to comply with the enterprise’s audit log management process.",
+    "label": "Ensure Adequate Audit Log Storage"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_108",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.17"
+    ],
+    "nis2_article_ids": [
+      "3.2.6"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Equivalent",
+    "notes": "[NIS2] Standardize time synchronization. Configure at least two synchronized time sources across enterprise assets, where supported.\n\n---\n\n[NIS2] The relevant entities shall ensure that all systems have synchronised time sources to be able to correlate logs between systems for event assessment. The relevant entities shall establish and keep a list of all assets that are being logged and ensure that monitoring and logging systems are redundant. The availability of the monitoring and logging systems shall be monitored independently.",
+    "label": "Standardize Time Synchronization"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_109",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.28",
+      "A.8.15"
+    ],
+    "nis2_article_ids": [
+      "3.2.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Configure detailed audit logging for enterprise assets containing sensitive data. Include event source, date, username, timestamp, source addresses, destination addresses, and other useful elements that could assist in a forensic investigation.\n\n---\n\n[NIS2] The relevant entities shall maintain, document, and review logs. Logs shall include:\r\n(a) outbound and inbound network traffic; EN 5 EN\r\n(b) creation, modification or deletion of users of the relevant entities’ network and information systems and extension of the permissions;\r\n(c) access to systems and applications;\r\n(d) authentication-related events;\r\n(e) all privileged access to systems and applications, and activities performed by administrative accounts;\r\n(f) access or changes to critical configuration and backup files;\r\n(g) event logs and logs from security tools, such as antivirus, intrusion detection systems or firewalls;\r\n(h) use of system resources, as well as their performance;\r\n(i) physical access to facilities, where appropriate;\r\n(j) access to and use of their network equipment and devices;\r\n(k) activation, stopping and pausing of the various logs;\r\n(l) environmental events, such as flooding alarms, where appropriate.",
+    "label": "Collect Detailed Audit Logs"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_111",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Collect DNS query audit logs on enterprise assets, where appropriate and supported.",
+    "label": "Collect DNS Query Audit Logs"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_112",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Collect URL request audit logs on enterprise assets, where appropriate and supported.",
+    "label": "Collect URL Request Audit Logs"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_113",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.15"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Collect command-line audit logs. Example implementations include collecting audit logs from PowerShell®, BASH™, and remote administrative terminals.",
+    "label": "Collect Command-Line Audit Logs"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_114",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.9",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [
+      "3.2.5"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "[NIS2] Centralize, to the extent possible, audit log collection and retention across enterprise assets in accordance with the documented audit log management process. Example implementations include leveraging a SIEM tool to centralize multiple log sources.\n\n---\n\n[NIS2] The relevant entities shall maintain and back up logs for a predefined period and shall store the logs at a central location and protect them from unauthorised access or changes.",
+    "label": "Centralize Audit Logs"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_116",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.11",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.25"
+    ],
+    "nis2_article_ids": [
+      "3.2.3",
+      "3.2.4"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Conduct reviews of audit logs to detect anomalies or abnormal events that could indicate a potential threat. Conduct reviews on a weekly, or more frequent, basis.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall maintain, document, and review logs. Logs shall include:\r\n(a) outbound and inbound network traffic; EN 5 EN\r\n(b) creation, modification or deletion of users of the relevant entities’ network and information systems and extension of the permissions;\r\n(c) access to systems and applications;\r\n(d) authentication-related events;\r\n(e) all privileged access to systems and applications, and activities performed by administrative accounts;\r\n(f) access or changes to critical configuration and backup files;\r\n(g) event logs and logs from security tools, such as antivirus, intrusion detection systems or firewalls;\r\n(h) use of system resources, as well as their performance;\r\n(i) physical access to facilities, where appropriate;\r\n(j) access to and use of their network equipment and devices;\r\n(k) activation, stopping and pausing of the various logs;\r\n(l) environmental events, such as flooding alarms, where appropriate.\n\n---\n\n[NIS2] The logs shall be reviewed for any unusual or unwanted trends. The relevant entities shall lay down appropriate values for alarm thresholds. If the laid down values for alarm threshold are exceeded, an alarm shall be triggered, where appropriate, automatically. The responsible employee shall ensure that, in case of an alarm, a qualified and appropriate response is initiated.",
+    "label": "Conduct Audit Log Reviews"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_117",
+    "cis_control_id": "8",
+    "cis_safeguard_id": "8.12",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Collect service provider logs, where supported. Example implementations include collecting authentication and authorization events, data creation and disposal events, and user management events.",
+    "label": "Collect Service Provider Logs"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_118",
+    "cis_control_id": "9",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Email and Web Browser Protections"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_120",
+    "cis_control_id": "9",
+    "cis_safeguard_id": "9.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.1"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Ensure only fully supported browsers and email clients are allowed to execute in the enterprise, only using the latest version of browsers and email clients provided through the vendor.",
+    "label": "Ensure Use of Only Fully Supported Browsers and Email Clients"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_121",
+    "cis_control_id": "9",
+    "cis_safeguard_id": "9.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.23"
+    ],
+    "nis2_article_ids": [
+      "6.7.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Use DNS filtering services on all end-user devices, including remote and on-premises assets, to block access to known malicious domains.\n\n---\n\n[NIS2] For the purpose of point 6.7.1., the relevant entities shall:\r\n(a) document the architecture of the network in a comprehensible and up to date manner;\r\n(b) determine and apply controls to protect the relevant entities’ internal network domains from unauthorised access;\r\n(c) configure controls to prevent accesses not required for the operation of the relevant entities;\r\n(d) determine and apply controls for remote access to network and information systems, including access by service providers; EN 14 EN\r\n(e) not use systems used for administration of the security policy implementation for other purposes;\r\n(f) explicitly forbid or deactivate unneeded connections and services;\r\n(g) where appropriate, exclusively allow access to the relevant entities’ network and information systems by devices authorised by those entities;\r\n(h) allow connections of service providers only after an authorisation request and for a set time period, such as the duration of a maintenance operation;\r\n(i) establish communication between distinct systems only through trusted channels that are isolated using logical, cryptographic or physical separation from other communication channels and provide assured identification of their end points and protection of the channel data from modification or disclosure;\r\n(j) adopt an implementation plan for the secure and full transition towards latest generation network layer communication protocols to reduce the attack surface of the networks and establish measures to accelerate such transition;\r\n(k) adopt an implementation plan for the deployment of internationally agreed and interoperable modern e-mail communications standards to secure e-mail communications to mitigate vulnerabilities linked to e-mail-related threats and establish measures to accelerate such deployment;\r\n(l) apply best practices for Internet routing security and routing hygiene of traffic originating from and destined to the network.",
+    "label": "Use DNS Filtering Services"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_122",
+    "cis_control_id": "9",
+    "cis_safeguard_id": "9.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.23",
+      "A.8.7"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Enforce and update network-based URL filters to limit an enterprise asset from connecting to potentially malicious or unapproved websites. Example implementations include category-based filtering, reputation-based filtering, or through the use of block lists. Enforce filters for all enterprise assets.",
+    "label": "Maintain and Enforce Network-Based URL Filters"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_124",
+    "cis_control_id": "9",
+    "cis_safeguard_id": "9.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Restrict, either through uninstalling or disabling, any unauthorized or unnecessary browser or email client plugins, extensions, and add-on applications.",
+    "label": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_125",
+    "cis_control_id": "9",
+    "cis_safeguard_id": "9.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [
+      "6.7.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "[NIS2] To lower the chance of spoofed or modified emails from valid domains, implement DMARC policy and verification, starting with implementing the Sender Policy Framework (SPF) and the DomainKeys Identified Mail (DKIM) standards.\n\n---\n\n[NIS2] For the purpose of point 6.7.1., the relevant entities shall:\r\n(a) document the architecture of the network in a comprehensible and up to date manner;\r\n(b) determine and apply controls to protect the relevant entities’ internal network domains from unauthorised access;\r\n(c) configure controls to prevent accesses not required for the operation of the relevant entities;\r\n(d) determine and apply controls for remote access to network and information systems, including access by service providers; EN 14 EN\r\n(e) not use systems used for administration of the security policy implementation for other purposes;\r\n(f) explicitly forbid or deactivate unneeded connections and services;\r\n(g) where appropriate, exclusively allow access to the relevant entities’ network and information systems by devices authorised by those entities;\r\n(h) allow connections of service providers only after an authorisation request and for a set time period, such as the duration of a maintenance operation;\r\n(i) establish communication between distinct systems only through trusted channels that are isolated using logical, cryptographic or physical separation from other communication channels and provide assured identification of their end points and protection of the channel data from modification or disclosure;\r\n(j) adopt an implementation plan for the secure and full transition towards latest generation network layer communication protocols to reduce the attack surface of the networks and establish measures to accelerate such transition;\r\n(k) adopt an implementation plan for the deployment of internationally agreed and interoperable modern e-mail communications standards to secure e-mail communications to mitigate vulnerabilities linked to e-mail-related threats and establish measures to accelerate such deployment;\r\n(l) apply best practices for Internet routing security and routing hygiene of traffic originating from and destined to the network.",
+    "label": "Implement DMARC"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_126",
+    "cis_control_id": "9",
+    "cis_safeguard_id": "9.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Block unnecessary file types attempting to enter the enterprise’s email gateway.",
+    "label": "Block Unnecessary File Types"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_127",
+    "cis_control_id": "9",
+    "cis_safeguard_id": "9.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.7"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Deploy and maintain email server anti-malware protections, such as attachment scanning and/or sandboxing.",
+    "label": "Deploy and Maintain Email Server Anti-Malware Protections"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_128",
+    "cis_control_id": "10",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Malware Defenses"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_130",
+    "cis_control_id": "10",
+    "cis_safeguard_id": "10.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.1",
+      "A.8.7"
+    ],
+    "nis2_article_ids": [
+      "6.9.1",
+      "6.9.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Deploy and maintain anti-malware software on all enterprise assets.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall protect their network and information systems against malicious and unauthorised software.\n\n---\n\n[NIS2] For that purpose, the relevant entities shall in particular ensure that their network and information systems are equipped with malware detection and repair software, which is updated regularly in accordance with the with the risk assessment and the contractual agreements with the providers.",
+    "label": "Deploy and Maintain Anti-Malware Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_132",
+    "cis_control_id": "10",
+    "cis_safeguard_id": "10.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.7"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Configure automatic updates for anti-malware signature files on all enterprise assets.",
+    "label": "Configure Automatic Anti-Malware Signature Updates"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_133",
+    "cis_control_id": "10",
+    "cis_safeguard_id": "10.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [
+      "12.3.1",
+      "12.3.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "[NIS2] Disable autorun and autoplay auto-execute functionality for removable media.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall establish, implement and apply a policy on the management of removable storage media and communicate it to their employees and third parties who handle removable storage media at the relevant entities’ premises or other locations where the removable media is connected to the relevant entities’ network and information systems.\n\n---\n\n[NIS2] The policy shall:\r\n(a) provide for a technical prohibition of the connection of removable media unless there is an organisational reason for their use;\r\n(b) provide for disabling self-execution from such media and scanning the media for malicious code before they are used on the entities’ systems;\r\n(c) provide measures for controlling and protecting portable storage devices containing data while in transit and in storage;\r\n(d) where appropriate, provide measures for the use of cryptographic techniques to protect information on removable storage media.",
+    "label": "Disable Autorun and Autoplay for Removable Media"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_134",
+    "cis_control_id": "10",
+    "cis_safeguard_id": "10.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.7"
+    ],
+    "nis2_article_ids": [
+      "12.3.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Configure anti-malware software to automatically scan removable media.\n\n---\n\n[NIS2] The relevant entities shall establish, implement and apply a policy on the management of removable storage media and communicate it to their employees and third parties who handle removable storage media at the relevant entities’ premises or other locations where the removable media is connected to the relevant entities’ network and information systems.",
+    "label": "Configure Automatic Anti-Malware Scanning of Removable Media"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_135",
+    "cis_control_id": "10",
+    "cis_safeguard_id": "10.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.7"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Enable anti-exploitation features on enterprise assets and software, where possible, such as Microsoft® Data Execution Prevention (DEP), Windows® Defender Exploit Guard (WDEG), or Apple® System Integrity Protection (SIP) and Gatekeeper™.",
+    "label": "Enable Anti-Exploitation Features"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_136",
+    "cis_control_id": "10",
+    "cis_safeguard_id": "10.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.7"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Centrally manage anti-malware software.",
+    "label": "Centrally Manage Anti-Malware Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_137",
+    "cis_control_id": "10",
+    "cis_safeguard_id": "10.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.1",
+      "A.8.7"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Use behavior-based anti-malware software.",
+    "label": "Use Behavior-Based Anti-Malware Software"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_139",
+    "cis_control_id": "11",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Data Recovery"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_141",
+    "cis_control_id": "11",
+    "cis_safeguard_id": "11.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.13"
+    ],
+    "nis2_article_ids": [
+      "4.2.1",
+      "4.2.2",
+      "4.2.4"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain a documented data recovery process. In the process, address the scope of data recovery activities, recovery prioritization, and the security of backup data. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall maintain backup copies of information and provide sufficient available resources, including facilities, network and information systems and staff.\n\n---\n\n[NIS2] Based on the results of the risk assessment and the business continuity plan, the relevant entities shall lay down backup plans which include the following:\r\n(a) recovery times;\r\n(b) assurance that backup copies are complete and accurate, including configuration data and information stored in cloud computing service environment;\r\n(c) storing backup copies (online or offline) in a safe location or locations, which are not in the same network as the system, and are at sufficient distance to escape any damage from a disaster at the main site; EN 8 EN\r\n(d) appropriate physical and logical access controls to backup copies, in accordance with the information classification level;\r\n(e) restoring information from backup copies, including approval processes;\r\n(f) retention periods based on business and regulatory requirements.\n\n---\n\n[NIS2] The relevant entities shall ensure sufficient availability of resources by at least partial redundancy of the following:\r\n(a) network and information systems;\r\n(b) assets, including facilities, equipment and supplies;\r\n(c) personnel with the necessary responsibility, authority and competence;\r\n(d) appropriate communication channels.",
+    "label": "Establish and Maintain a Data Recovery Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_142",
+    "cis_control_id": "11",
+    "cis_safeguard_id": "11.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.13"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Perform automated backups of in-scope enterprise assets. Run backups weekly, or more frequently, based on the sensitivity of the data.",
+    "label": "Perform Automated Backups"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_143",
+    "cis_control_id": "11",
+    "cis_safeguard_id": "11.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.12",
+      "A.8.13"
+    ],
+    "nis2_article_ids": [
+      "4.2.2",
+      "4.2.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Protect recovery data with equivalent controls to the original data. Reference encryption or data separation, based on requirements.\n\n---\n\n[NIS2] [NIS2] Based on the results of the risk assessment and the business continuity plan, the relevant entities shall lay down backup plans which include the following:\r\n(a) recovery times;\r\n(b) assurance that backup copies are complete and accurate, including configuration data and information stored in cloud computing service environment;\r\n(c) storing backup copies (online or offline) in a safe location or locations, which are not in the same network as the system, and are at sufficient distance to escape any damage from a disaster at the main site; EN 8 EN\r\n(d) appropriate physical and logical access controls to backup copies, in accordance with the information classification level;\r\n(e) restoring information from backup copies, including approval processes;\r\n(f) retention periods based on business and regulatory requirements.\n\n---\n\n[NIS2] The relevant entities shall perform regular integrity checks on the backup copies.",
+    "label": "Protect Recovery Data"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_145",
+    "cis_control_id": "11",
+    "cis_safeguard_id": "11.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.13"
+    ],
+    "nis2_article_ids": [
+      "4.2.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain an isolated instance of recovery data. Example implementations include, version controlling backup destinations through offline, cloud, or off-site systems or services.\n\n---\n\n[NIS2] Based on the results of the risk assessment and the business continuity plan, the relevant entities shall lay down backup plans which include the following:\r\n(a) recovery times;\r\n(b) assurance that backup copies are complete and accurate, including configuration data and information stored in cloud computing service environment;\r\n(c) storing backup copies (online or offline) in a safe location or locations, which are not in the same network as the system, and are at sufficient distance to escape any damage from a disaster at the main site; EN 8 EN\r\n(d) appropriate physical and logical access controls to backup copies, in accordance with the information classification level;\r\n(e) restoring information from backup copies, including approval processes;\r\n(f) retention periods based on business and regulatory requirements.",
+    "label": "Establish and Maintain an Isolated Instance of Recovery Data"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_146",
+    "cis_control_id": "11",
+    "cis_safeguard_id": "11.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.13"
+    ],
+    "nis2_article_ids": [
+      "4.2.6"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Test backup recovery quarterly, or more frequently, for a sampling of in-scope enterprise assets.\n\n---\n\n[NIS2] The relevant entities shall carry out regular testing of the recovery of backup copies and redundancies to ensure that, in recovery conditions, they can be relied upon and cover the copies, processes and knowledge to perform an effective recovery. The relevant entities shall document the results of the tests and, where needed, take corrective action.",
+    "label": "Test Data Recovery"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_147",
+    "cis_control_id": "12",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Network Infrastructure Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_149",
+    "cis_control_id": "12",
+    "cis_safeguard_id": "12.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [
+      "6.6.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "[NIS2] Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network-as-a-service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support.\n\n---\n\n[NIS2] The relevant entities shall specify and apply procedures for ensuring that:\r\n(a) security patches are applied within a reasonable time after they become available;\r\n(b) security patches are tested before being applied in production systems;\r\n(c) security patches come from trusted sources and are checked for integrity;\r\n(d) additional measures are implemented and residual risks are accepted in cases where a patch is not available or not applied pursuant to point 6.6.2.",
+    "label": "Ensure Network Infrastructure is Up-to-Date"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_150",
+    "cis_control_id": "12",
+    "cis_safeguard_id": "12.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.22",
+      "A.8.27"
+    ],
+    "nis2_article_ids": [
+      "6.7.2",
+      "6.8.1",
+      "6.8.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations will not solely include documentation, but also policy and design components.\n\n---\n\n[NIS2] [NIS2] For the purpose of point 6.7.1., the relevant entities shall:\r\n(a) document the architecture of the network in a comprehensible and up to date manner;\r\n(b) determine and apply controls to protect the relevant entities’ internal network domains from unauthorised access;\r\n(c) configure controls to prevent accesses not required for the operation of the relevant entities;\r\n(d) determine and apply controls for remote access to network and information systems, including access by service providers; EN 14 EN\r\n(e) not use systems used for administration of the security policy implementation for other purposes;\r\n(f) explicitly forbid or deactivate unneeded connections and services;\r\n(g) where appropriate, exclusively allow access to the relevant entities’ network and information systems by devices authorised by those entities;\r\n(h) allow connections of service providers only after an authorisation request and for a set time period, such as the duration of a maintenance operation;\r\n(i) establish communication between distinct systems only through trusted channels that are isolated using logical, cryptographic or physical separation from other communication channels and provide assured identification of their end points and protection of the channel data from modification or disclosure;\r\n(j) adopt an implementation plan for the secure and full transition towards latest generation network layer communication protocols to reduce the attack surface of the networks and establish measures to accelerate such transition;\r\n(k) adopt an implementation plan for the deployment of internationally agreed and interoperable modern e-mail communications standards to secure e-mail communications to mitigate vulnerabilities linked to e-mail-related threats and establish measures to accelerate such deployment;\r\n(l) apply best practices for Internet routing security and routing hygiene of traffic originating from and destined to the network.\n\n---\n\n[NIS2] The relevant entities shall segment systems into networks or zones in accordance with the results of the risk assessment referred to in point 2.1. They shall segment their systems and networks from third parties’ systems and networks.\n\n---\n\n[NIS2] For that purpose, the relevant entities shall:\r\n(a) consider the functional, logical and physical relationship, including location, between trustworthy systems and services;\r\n(b) apply the same security measures to all network and information systems in the same zone;\r\n(c) grant access to a network or zone based on an assessment of its security requirements;\r\n(d) keep all systems that are critical to the relevant entities operation or to safety in one or more secured zones;\r\n(e) restrict access and communications between and within zones to those necessary for the operation of the relevant entities or for safety;\r\n(f) separate the dedicated network for administration of network and information systems from the relevant entities’ operational network;\r\n(g) segregate network administration channels from other network traffic; EN 15 EN\r\n(h) separate the production systems for the entities’ services from systems used in development and testing, including backups.",
+    "label": "Establish and Maintain a Secure Network Architecture"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_152",
+    "cis_control_id": "12",
+    "cis_safeguard_id": "12.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.20",
+      "A.8.21"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS.",
+    "label": "Securely Manage Network Infrastructure"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_154",
+    "cis_control_id": "12",
+    "cis_safeguard_id": "12.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [
+      "6.7.2",
+      "6.7.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "[NIS2] Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] For the purpose of point 6.7.1., the relevant entities shall:\r\n(a) document the architecture of the network in a comprehensible and up to date manner;\r\n(b) determine and apply controls to protect the relevant entities’ internal network domains from unauthorised access;\r\n(c) configure controls to prevent accesses not required for the operation of the relevant entities;\r\n(d) determine and apply controls for remote access to network and information systems, including access by service providers; EN 14 EN\r\n(e) not use systems used for administration of the security policy implementation for other purposes;\r\n(f) explicitly forbid or deactivate unneeded connections and services;\r\n(g) where appropriate, exclusively allow access to the relevant entities’ network and information systems by devices authorised by those entities;\r\n(h) allow connections of service providers only after an authorisation request and for a set time period, such as the duration of a maintenance operation;\r\n(i) establish communication between distinct systems only through trusted channels that are isolated using logical, cryptographic or physical separation from other communication channels and provide assured identification of their end points and protection of the channel data from modification or disclosure;\r\n(j) adopt an implementation plan for the secure and full transition towards latest generation network layer communication protocols to reduce the attack surface of the networks and establish measures to accelerate such transition;\r\n(k) adopt an implementation plan for the deployment of internationally agreed and interoperable modern e-mail communications standards to secure e-mail communications to mitigate vulnerabilities linked to e-mail-related threats and establish measures to accelerate such deployment;\r\n(l) apply best practices for Internet routing security and routing hygiene of traffic originating from and destined to the network.\n\n---\n\n[NIS2] The relevant entities shall review and, where appropriate, update these measures at planned intervals and when significant incidents or significant changes to operations or risks occur.",
+    "label": "Establish and Maintain Architecture Diagram(s)"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_155",
+    "cis_control_id": "12",
+    "cis_safeguard_id": "12.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Centralize network AAA.",
+    "label": "Centralize Network Authentication, Authorization, and Auditing (AAA)"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_156",
+    "cis_control_id": "12",
+    "cis_safeguard_id": "12.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [
+      "6.7.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "[NIS2] Use secure network management and communication protocols (e.g., 802.1X, Wi-Fi Protected Access 2 (WPA2) Enterprise or greater).\n\n---\n\n[NIS2] For the purpose of point 6.7.1., the relevant entities shall:\r\n(a) document the architecture of the network in a comprehensible and up to date manner;\r\n(b) determine and apply controls to protect the relevant entities’ internal network domains from unauthorised access;\r\n(c) configure controls to prevent accesses not required for the operation of the relevant entities;\r\n(d) determine and apply controls for remote access to network and information systems, including access by service providers; EN 14 EN\r\n(e) not use systems used for administration of the security policy implementation for other purposes;\r\n(f) explicitly forbid or deactivate unneeded connections and services;\r\n(g) where appropriate, exclusively allow access to the relevant entities’ network and information systems by devices authorised by those entities;\r\n(h) allow connections of service providers only after an authorisation request and for a set time period, such as the duration of a maintenance operation;\r\n(i) establish communication between distinct systems only through trusted channels that are isolated using logical, cryptographic or physical separation from other communication channels and provide assured identification of their end points and protection of the channel data from modification or disclosure;\r\n(j) adopt an implementation plan for the secure and full transition towards latest generation network layer communication protocols to reduce the attack surface of the networks and establish measures to accelerate such transition;\r\n(k) adopt an implementation plan for the deployment of internationally agreed and interoperable modern e-mail communications standards to secure e-mail communications to mitigate vulnerabilities linked to e-mail-related threats and establish measures to accelerate such deployment;\r\n(l) apply best practices for Internet routing security and routing hygiene of traffic originating from and destined to the network.",
+    "label": "Use of Secure Network Management and Communication Protocols"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_157",
+    "cis_control_id": "12",
+    "cis_safeguard_id": "12.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.7",
+      "A.8.1"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices.",
+    "label": "Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise’s AAA Infrastructure"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_159",
+    "cis_control_id": "12",
+    "cis_safeguard_id": "12.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.2",
+      "A.8.22"
+    ],
+    "nis2_article_ids": [
+      "6.8.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access.\n\n---\n\n[NIS2] For that purpose, the relevant entities shall:\r\n(a) consider the functional, logical and physical relationship, including location, between trustworthy systems and services;\r\n(b) apply the same security measures to all network and information systems in the same zone;\r\n(c) grant access to a network or zone based on an assessment of its security requirements;\r\n(d) keep all systems that are critical to the relevant entities operation or to safety in one or more secured zones;\r\n(e) restrict access and communications between and within zones to those necessary for the operation of the relevant entities or for safety;\r\n(f) separate the dedicated network for administration of network and information systems from the relevant entities’ operational network;\r\n(g) segregate network administration channels from other network traffic; EN 15 EN\r\n(h) separate the production systems for the entities’ services from systems used in development and testing, including backups.",
+    "label": "Establish and Maintain Dedicated Computing Resources for All Administrative Work"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_161",
+    "cis_control_id": "13",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Network Monitoring and Defense"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_163",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.15"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Centralize security event alerting across enterprise assets for log correlation and analysis. Best practice implementation requires the use of a SIEM, which includes vendor-defined event correlation alerts. A log analytics platform configured with security-relevant correlation alerts also satisfies this Safeguard.",
+    "label": "Centralize Security Event Alerting"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_164",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.16"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Deploy a host-based intrusion detection solution on enterprise assets, where appropriate and/or supported.",
+    "label": "Deploy a Host-Based Intrusion Detection Solution"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_165",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.16"
+    ],
+    "nis2_article_ids": [
+      "6.7.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Deploy a network intrusion detection solution on enterprise assets, where appropriate. Example implementations include the use of a Network Intrusion Detection System (NIDS) or equivalent cloud service provider (CSP) service.\n\n---\n\n[NIS2] The relevant entities shall take the appropriate measures to protect their network and information systems from cyber threats.",
+    "label": "Deploy a Network Intrusion Detection Solution"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_166",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.16",
+      "A.8.22"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Perform traffic filtering between network segments, where appropriate.",
+    "label": "Perform Traffic Filtering Between Network Segments"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_168",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.7",
+      "A.8.1",
+      "A.8.3"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Manage access control for assets remotely connecting to enterprise resources. Determine amount of access to enterprise resources based on: up-to-date anti-malware software installed, configuration compliance with the enterprise’s secure configuration process, and ensuring the operating system and applications are up-to-date.",
+    "label": "Manage Access Control for Remote Assets"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_171",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.15",
+      "A.8.16"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Collect network traffic flow logs and/or network traffic to review and alert upon from network devices.",
+    "label": "Collect Network Traffic Flow Logs"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_173",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Deploy a host-based intrusion prevention solution on enterprise assets, where appropriate and/or supported. Example implementations include use of an Endpoint Detection and Response (EDR) client or host-based IPS agent.",
+    "label": "Deploy a Host-Based Intrusion Prevention Solution"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_174",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Deploy a network intrusion prevention solution, where appropriate. Example implementations include the use of a Network Intrusion Prevention System (NIPS) or equivalent CSP service.",
+    "label": "Deploy a Network Intrusion Prevention Solution"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_175",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.9",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Deploy port-level access control. Port-level access control utilizes 802.1x, or similar network access control protocols, such as certificates, and may incorporate user and/or device authentication.",
+    "label": "Deploy Port-Level Access Control"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_176",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.10",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Perform application layer filtering. Example implementations include a filtering proxy, application layer firewall, or gateway.",
+    "label": "Perform Application Layer Filtering"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_177",
+    "cis_control_id": "13",
+    "cis_safeguard_id": "13.11",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [
+      "3.4.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "[NIS2] Tune security event alerting thresholds monthly, or more frequently.\n\n---\n\n[NIS2] The relevant entities shall assess suspicious events to determine whether they constitute incidents and, if so, determine their nature and severity.",
+    "label": "Tune Security Event Alerting Thresholds"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_178",
+    "cis_control_id": "14",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Security Awareness and Skills Training"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_180",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.3"
+    ],
+    "nis2_article_ids": [
+      "8.1.1",
+      "8.1.2",
+      "8.1.3",
+      "8.2.5"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain a security awareness program. The purpose of a security awareness program is to educate the enterprise’s workforce on how to interact with enterprise assets and data in a secure manner. Conduct training at hire and, at a minimum, annually. Review and update content annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] For the purpose of Article 21(2), point (g) of Directive (EU) 2022/2555, the relevant entities shall ensure that their employees are aware of risks, are informed of the importance of cybersecurity and apply cyber hygiene practices.\n\n---\n\n[NIS2] The relevant entities shall offer to all employees, including members of management bodies, an awareness raising programme, which shall:\r\n(a) be scheduled over time, so that the activities are repeated and cover new employees;\r\n(b) be established in line with the network and information security policy, topicspecific policies and relevant procedures on network and information security;\r\n(c) cover cybersecurity risk-management measures in place, contact points and resources for additional information and advice on cybersecurity matters, as well as cyber hygiene practices for users.\n\n---\n\n[NIS2] The awareness raising program shall be tested in terms of effectiveness, updated and offered at planned intervals taking into account changes in cyber hygiene practices, and the current threat landscape and risks posed to the relevant entities.\n\n---\n\n[NIS2] The program shall be updated and run periodically taking into account applicable policies and rules, assigned roles, responsibilities, as well as known cyber threats and technological developments.",
+    "label": "Establish and Maintain a Security Awareness Program"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_181",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.7"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Train workforce members to recognize social engineering attacks, such as phishing, business email compromise (BEC), pretexting, and tailgating.",
+    "label": "Train Workforce Members to Recognize Social Engineering Attacks"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_182",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "notes": "Train workforce members on authentication best practices. Example topics include MFA, password composition, and credential management.",
+    "label": "Train Workforce Members on Authentication Best Practices"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_183",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.10"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Train workforce members on how to identify and properly store, transfer, archive, and destroy sensitive data. This also includes training workforce members on clear screen and desk best practices, such as locking their screen when they step away from their enterprise asset, erasing physical and virtual whiteboards at the end of meetings, and storing data and assets securely.",
+    "label": "Train Workforce on Data Handling Best Practices"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_184",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.3"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Train workforce members to be aware of causes for unintentional data exposure. Example topics include mis-delivery of sensitive data, losing a portable end-user device, or publishing data to unintended audiences.",
+    "label": "Train Workforce Members on Causes of Unintentional Data Exposure"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_185",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.3",
+      "A.6.8"
+    ],
+    "nis2_article_ids": [
+      "3.3.1",
+      "3.3.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Train workforce members to be able to recognize a potential incident and be able to report such an incident.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall put in place a simple mechanism allowing their employees, suppliers, and customers to report suspicious events.\n\n---\n\n[NIS2] The relevant entities shall communicate the event reporting mechanism to their suppliers and customers and shall regularly train their employees how to use the mechanism.",
+    "label": "Train Workforce Members on Recognizing and Reporting Security Incidents"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_187",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.3"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Train workforce to understand how to verify and report out-of-date software patches or any failures in automated processes and tools. Part of this training should include notifying IT personnel of any failures in automated processes and tools.",
+    "label": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_188",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.3"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Train workforce members on the dangers of connecting to, and transmitting data over, insecure networks for enterprise activities. If the enterprise has remote workers, training must include guidance to ensure that all users securely configure their home network infrastructure.",
+    "label": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_189",
+    "cis_control_id": "14",
+    "cis_safeguard_id": "14.9",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.3"
+    ],
+    "nis2_article_ids": [
+      "8.2.1",
+      "8.2.2",
+      "8.2.3",
+      "8.2.4"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Conduct role-specific security awareness and skills training. Example implementations include secure system administration courses for IT professionals, OWASP® Top 10 vulnerability awareness and prevention training for web application developers, and advanced social engineering awareness training for high-profile roles.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall ensure that employees, whose roles require security relevant skill sets and expertise, receive training on network and information system security.\n\n---\n\n[NIS2] The relevant entities shall establish, implement and apply a training program in line with the network and information security policy, topic-specific policies and other relevant procedures on network and information security which lays down the training needs for certain roles and positions based on criteria.\n\n---\n\n[NIS2] The training referred to in point 8.2.1. shall be relevant to the job function of the employee and its effectiveness shall be assessed. Training shall take into consideration security measures in place and cover the following:\r\n(a) regular and documented instructions regarding the secure configuration and operation of the network and information systems, including mobile devices;\r\n(b) regular and documented briefing on known cyber threats;\r\n(c) regular and documented training of the behaviour when security-relevant events occur.\n\n---\n\n[NIS2] The relevant entities shall apply training to staff members who transfer to new positions or roles which require security relevant skill sets and expertise.",
+    "label": "Conduct Role-Specific Security Awareness and Skills Training"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_190",
+    "cis_control_id": "15",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Service Provider Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_192",
+    "cis_control_id": "15",
+    "cis_safeguard_id": "15.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.19"
+    ],
+    "nis2_article_ids": [
+      "5.2.1"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain an inventory of service providers. The inventory is to list all known service providers, include classification(s), and designate an enterprise contact for each service provider. Review and update the inventory annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] The relevant entities shall maintain and keep up to date a registry of their direct suppliers and service providers, including:\r\n(a) contact points for each direct supplier and service provider;\r\n(b) a list of ICT products, ICT services, and ICT processes provided by the direct supplier or service provider to the entities.",
+    "label": "Establish and Maintain an Inventory of Service Providers"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_193",
+    "cis_control_id": "15",
+    "cis_safeguard_id": "15.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.1",
+      "A.5.10",
+      "A.5.19",
+      "A.5.20",
+      "A.5.23"
+    ],
+    "nis2_article_ids": [
+      "5.1.1",
+      "5.1.6",
+      "6.1.1",
+      "6.1.2",
+      "6.1.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain a service provider management policy. Ensure the policy addresses the classification, inventory, assessment, monitoring, and decommissioning of service providers. Review and update the policy annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] For the purpose of Article 21(2), point (d) of Directive (EU) 2022/2555, the relevant entities shall establish, implement and apply a supply chain security policy which governs the relations with their direct suppliers and service providers in order to mitigate the identified risks to the security of network and information systems. In the supply chain security policy, the relevant entities shall identify their role in the supply chain and communicate it to their direct suppliers and service providers.\n\n---\n\n[NIS2] The relevant entities shall review the supply chain security policy, and monitor, evaluate and, where necessary, act upon changes in the cybersecurity practices of suppliers and service providers, at planned intervals and when significant changes to operations or risks or significant incidents related to the provision of ICT services or having impact on the security of the ICT product from suppliers and service providers occur.\n\n---\n\n[NIS2] For the purpose of Article 21(2), point (e) of Directive (EU) 2022/2555, the relevant entities shall set and implement processes and procedures to manage risks stemming from the acquisition of ICT services or ICT products for components that are critical for the relevant entities’ security of network and information systems, based on the risk assessment, from suppliers or service providers throughout their life cycle.\n\n---\n\n[NIS2] For the purpose of point 6.1.1., the processes and procedures referred to in point 6.1.1. shall include:\r\n(a) security requirements to apply to the ICT services or ICT products to be acquired;\r\n(b) requirements regarding security updates throughout the entire lifetime of the ICT services or ICT products, or replacement after the end of the support period;\r\n(c) information describing the hardware and software components used in the ICT services or ICT products;\r\n(d) information describing the implemented cybersecurity functions of the ICT services or ICT products and the configuration required for their secure operation;\r\n(e) assurance that the ICT services or ICT products comply with the security requirements according to point (a);\r\n(f) appropriate methods for validating that the delivered ICT services or ICT products are compliant to the stated security requirements, as well as documentation of the results of the validation.\n\n---\n\n[NIS2] The relevant entities shall review and, where appropriate, update the processes and procedures at planned intervals and when significant incidents occur.",
+    "label": "Establish and Maintain a Service Provider Management Policy"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_199",
+    "cis_control_id": "15",
+    "cis_safeguard_id": "15.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.19"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Classify service providers. Classification consideration may include one or more characteristics, such as data sensitivity, data volume, availability requirements, applicable regulations, inherent risk, and mitigated risk. Update and review classifications annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "label": "Classify Service Providers"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_200",
+    "cis_control_id": "15",
+    "cis_safeguard_id": "15.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.14",
+      "A.5.20",
+      "A.5.21",
+      "A.5.23"
+    ],
+    "nis2_article_ids": [
+      "1.2.2",
+      "3.3.2",
+      "5.1.4"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Ensure service provider contracts include security requirements. Example requirements may include minimum security program requirements, security incident and/or data breach notification and response, data encryption requirements, and data disposal commitments. These security requirements must be consistent with the enterprise’s service provider management policy. Review service provider contracts annually to ensure contracts are not missing security requirements.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall require all personnel and third parties to apply network and information system security in accordance with the established network and information security policy, topic-specific policies and procedures of the relevant entities.\n\n---\n\n[NIS2] The relevant entities shall communicate the event reporting mechanism to their suppliers and customers and shall regularly train their employees how to use the mechanism.\n\n---\n\n[NIS2] Based on the supply chain security policy and taking into account the results of the risk assessment carried out in accordance with point 2.1. of this Annex, the relevant entities shall ensure that their contracts with the suppliers and service providers specify, where appropriate through service level agreements, specify the following, where appropriate:\r\n(a) cybersecurity requirements for the suppliers or service providers, including requirements as regards the security in acquisition of ICT services or ICT products set out in point 6.1.;\r\n(b) requirements regarding skills and training, and where appropriate certifications, required from the suppliers’ or service providers’ employees;\r\n(c) requirements regarding background checks of the suppliers’ and service providers’ employees pursuant to point 10.2.;\r\n(d) an obligation on suppliers and service providers to notify, without undue delay, the relevant entities of incidents that present a risk to the security of the network and information systems of those entities;\r\n(e) provisions on repair times;\r\n(f) the right to audit or right to receive audit reports; EN 10 EN\r\n(g) an obligation on suppliers and service providers to handle vulnerabilities that present a risk to the security of the network and information systems of the relevant entities;\r\n(h) requirements regarding subcontracting and, where the relevant entities allow subcontracting, cybersecurity requirements for subcontractors in accordance with the cybersecurity requirements referred to in point (a);\r\n(i) obligations on the suppliers and service providers at the termination of the contract, such as retrieval and disposal of the information obtained by the suppliers and service providers in the exercise of their tasks.",
+    "label": "Ensure Service Provider Contracts Include Security Requirements"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_204",
+    "cis_control_id": "15",
+    "cis_safeguard_id": "15.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.19",
+      "A.5.22",
+      "A.5.23"
+    ],
+    "nis2_article_ids": [
+      "5.1.2",
+      "5.1.5"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Assess service providers consistent with the enterprise’s service provider management policy. Assessment scope may vary based on classification(s), and may include review of standardized assessment reports, such as Service Organization Control 2 (SOC 2) and Payment Card Industry (PCI) Attestation of Compliance (AoC), customized questionnaires, or other appropriately rigorous processes. Reassess service providers annually, at a minimum, or with new and renewed contracts.\n\n---\n\n[NIS2] [NIS2] As part of the supply chain security policy referred to in point 5.1.1, the relevant entities shall lay down criteria to select and contract suppliers and service providers. Those criteria shall include the following:\r\n(a) the cybersecurity practices of the suppliers and service providers, including their secure development procedures;\r\n(b) the ability of the suppliers and service providers to meet cybersecurity specifications set by the entities;\r\n(c) the overall quality and resilience of ICT products and ICT services and the cybersecurity risk-management measures embedded in them, including the risks and classification level of the ICT products and ICT services;\r\n(d) the ability of the relevant entities to diversify sources of supply and limit vendor lock-in.\n\n---\n\n[NIS2] The relevant entities shall take into account the elements referred to in point 5.1.2 and 5.1.3. as part of the selection process of new suppliers and service providers, as well as part of the procurement process referred to in point 6.1.",
+    "label": "Assess Service Providers"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_207",
+    "cis_control_id": "15",
+    "cis_safeguard_id": "15.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.19",
+      "A.5.20",
+      "A.5.21",
+      "A.5.22"
+    ],
+    "nis2_article_ids": [
+      "5.1.4",
+      "5.1.6",
+      "5.1.7"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Monitor service providers consistent with the enterprise’s service provider management policy. Monitoring may include periodic reassessment of service provider compliance, monitoring service provider release notes, and dark web monitoring.\n\n---\n\n[NIS2] [NIS2] Based on the supply chain security policy and taking into account the results of the risk assessment carried out in accordance with point 2.1. of this Annex, the relevant entities shall ensure that their contracts with the suppliers and service providers specify, where appropriate through service level agreements, specify the following, where appropriate:\r\n(a) cybersecurity requirements for the suppliers or service providers, including requirements as regards the security in acquisition of ICT services or ICT products set out in point 6.1.;\r\n(b) requirements regarding skills and training, and where appropriate certifications, required from the suppliers’ or service providers’ employees;\r\n(c) requirements regarding background checks of the suppliers’ and service providers’ employees pursuant to point 10.2.;\r\n(d) an obligation on suppliers and service providers to notify, without undue delay, the relevant entities of incidents that present a risk to the security of the network and information systems of those entities;\r\n(e) provisions on repair times;\r\n(f) the right to audit or right to receive audit reports; EN 10 EN\r\n(g) an obligation on suppliers and service providers to handle vulnerabilities that present a risk to the security of the network and information systems of the relevant entities;\r\n(h) requirements regarding subcontracting and, where the relevant entities allow subcontracting, cybersecurity requirements for subcontractors in accordance with the cybersecurity requirements referred to in point (a);\r\n(i) obligations on the suppliers and service providers at the termination of the contract, such as retrieval and disposal of the information obtained by the suppliers and service providers in the exercise of their tasks.\n\n---\n\n[NIS2] The relevant entities shall review the supply chain security policy, and monitor, evaluate and, where necessary, act upon changes in the cybersecurity practices of suppliers and service providers, at planned intervals and when significant changes to operations or risks or significant incidents related to the provision of ICT services or having impact on the security of the ICT product from suppliers and service providers occur.\n\n---\n\n[NIS2] For the purpose of point 5.1.5., the relevant entities shall:\r\n(a) regularly monitor reports on the implementation of the service level agreements, where applicable;\r\n(b) review incidents related to ICT products and ICT services from suppliers and service providers;\r\n(c) assess the need for unscheduled reviews and document the findings in a comprehensible manner;\r\n(d) analyse the risks presented by changes related to ICT products and ICT services from suppliers and service providers and, where appropriate, take mitigating measures in a timely manner.",
+    "label": "Monitor Service Providers"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_211",
+    "cis_control_id": "15",
+    "cis_safeguard_id": "15.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.19",
+      "A.5.20"
+    ],
+    "nis2_article_ids": [
+      "5.1.4"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Securely decommission service providers. Example considerations include user and service account deactivation, termination of data flows, and secure disposal of enterprise data within service provider systems.\n\n---\n\n[NIS2] Based on the supply chain security policy and taking into account the results of the risk assessment carried out in accordance with point 2.1. of this Annex, the relevant entities shall ensure that their contracts with the suppliers and service providers specify, where appropriate through service level agreements, specify the following, where appropriate:\r\n(a) cybersecurity requirements for the suppliers or service providers, including requirements as regards the security in acquisition of ICT services or ICT products set out in point 6.1.;\r\n(b) requirements regarding skills and training, and where appropriate certifications, required from the suppliers’ or service providers’ employees;\r\n(c) requirements regarding background checks of the suppliers’ and service providers’ employees pursuant to point 10.2.;\r\n(d) an obligation on suppliers and service providers to notify, without undue delay, the relevant entities of incidents that present a risk to the security of the network and information systems of those entities;\r\n(e) provisions on repair times;\r\n(f) the right to audit or right to receive audit reports; EN 10 EN\r\n(g) an obligation on suppliers and service providers to handle vulnerabilities that present a risk to the security of the network and information systems of the relevant entities;\r\n(h) requirements regarding subcontracting and, where the relevant entities allow subcontracting, cybersecurity requirements for subcontractors in accordance with the cybersecurity requirements referred to in point (a);\r\n(i) obligations on the suppliers and service providers at the termination of the contract, such as retrieval and disposal of the information obtained by the suppliers and service providers in the exercise of their tasks.",
+    "label": "Securely Decommission Service Providers"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_213",
+    "cis_control_id": "16",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Application Software Security"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_215",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.8",
+      "A.8.25",
+      "A.8.27",
+      "A.8.28",
+      "A.8.4"
+    ],
+    "nis2_article_ids": [
+      "6.2.1",
+      "6.2.2",
+      "6.2.3",
+      "6.2.4"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain a secure application development process. In the process, address such items as: secure application design standards, secure coding practices, developer training, vulnerability management, security of third-party code, and application security testing procedures. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[CIS] Apply secure design principles in application architectures. Secure design principles include the concept of least privilege and enforcing mediation to validate every operation that the user makes, promoting the concept of \"never trust user input.\" Examples include ensuring that explicit error checking is performed and documented for all input, including for size, data type, and acceptable ranges or formats. Secure design also means minimizing the application infrastructure attack surface, such as turning off unprotected ports and services, removing unnecessary programs and files, and renaming or removing default accounts.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall lay down, implement and apply rules for the secure development of network and information systems, including software, and apply them when acquiring or developing network and information systems. The rules shall cover all development phases, including specification, design, development, implementation and testing.\n\n---\n\n[NIS2] The relevant entities shall:\r\n(a) carry out an analysis of security requirements at the specification and design phases of any development or acquisition project undertaken by the relevant entities or on behalf of those entities;\r\n(b) apply principles for engineering secure systems and secure coding principles to any information system development activities such as promoting cybersecurity-by-design, zero trust architectures;\r\n(c) lay down security requirements regarding development environments;\r\n(d) establish and implement security testing processes in the development life cycle;\r\n(e) appropriately select, protect and manage security test information; EN 12 EN\r\n(f) sanitise and anonymise testing data according to the risk assessment.\n\n---\n\n[NIS2] For outsourced development and procurement of network and information systems, the relevant entities shall apply the policies and procedures referred to in points 5 and 6.1.\n\n---\n\n[NIS2] The relevant entities shall review and, where appropriate, update their secure development rules at planned intervals.",
+    "label": "Establish and Maintain a Secure Application Development Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_219",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Establish and maintain a process to accept and address reports of software vulnerabilities, including providing a means for external entities to report. The process is to include such items as: a vulnerability handling policy that identifies reporting process, responsible party for handling vulnerability reports, and a process for intake, assignment, remediation, and remediation testing. As part of the process, use a vulnerability tracking system that includes severity ratings, and metrics for measuring timing for identification, analysis, and remediation of vulnerabilities. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\r\n\r\nThird-party application developers need to consider this an externally-facing policy that helps to set expectations for outside stakeholders.",
+    "label": "Establish and Maintain a Process to Accept and Address Software Vulnerabilities"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_220",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Perform root cause analysis on security vulnerabilities. When reviewing vulnerabilities, root cause analysis is the task of evaluating underlying issues that create vulnerabilities in code, and allows development teams to move beyond just fixing individual vulnerabilities as they arise.",
+    "label": "Perform Root Cause Analysis on Security Vulnerabilities"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_221",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.26",
+      "A.8.30"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and manage an updated inventory of third-party components used in development, often referred to as a “bill of materials,” as well as components slated for future use. This inventory is to include any risks that each third-party component could pose. Evaluate the list at least monthly to identify any changes or updates to these components, and validate that the component is still supported.",
+    "label": "Establish and Manage an Inventory of Third-Party Software Components"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_223",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.26"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Use up-to-date and trusted third-party software components. When possible, choose established and proven frameworks and libraries that provide adequate security. Acquire these components from trusted sources or evaluate the software for vulnerabilities before use.",
+    "label": "Use Up-to-Date and Trusted Third-Party Software Components"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_224",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Establish and maintain a severity rating system and process for application vulnerabilities that facilitates prioritizing the order in which discovered vulnerabilities are fixed. This process includes setting a minimum level of security acceptability for releasing code or applications. Severity ratings bring a systematic way of triaging vulnerabilities that improves risk management and helps ensure the most severe bugs are fixed first. Review and update the system and process annually.",
+    "label": "Establish and Maintain a Severity Rating System and Process for Application Vulnerabilities"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_225",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Use standard, industry-recommended hardening configuration templates for application infrastructure components. This includes underlying servers, databases, and web servers, and applies to cloud containers, Platform as a Service (PaaS) components, and SaaS components. Do not allow in-house developed software to weaken configuration hardening.",
+    "label": "Use Standard Hardening Configuration Templates for Application Infrastructure"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_226",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.31"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Equivalent",
+    "notes": "Maintain separate environments for production and non-production systems.",
+    "label": "Separate Production and Non-Production Systems"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_227",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.9",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.28"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Ensure that all software development personnel receive training in writing secure code for their specific development environment and responsibilities. Training can include general security principles and application security standard practices. Conduct training at least annually and design in a way to promote security within the development team, and build a culture of security among the developers.",
+    "label": "Train Developers in Application Security Concepts and Secure Coding"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_229",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.11",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.25",
+      "A.8.26"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Leverage vetted modules or services for application security components, such as identity management, encryption, and auditing and logging. Using platform features in critical security functions will reduce developers’ workload and minimize the likelihood of design or implementation errors. Modern operating systems provide effective mechanisms for identification, authentication, and authorization and make those mechanisms available to applications. Use only standardized, currently accepted, and extensively reviewed encryption algorithms. Operating systems also provide mechanisms to create and maintain secure audit logs.",
+    "label": "Leverage Vetted Modules or Services for Application Security Components"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_231",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.12",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.25",
+      "A.8.28",
+      "A.8.29"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Apply static and dynamic analysis tools within the application life cycle to verify that secure coding practices are being followed.",
+    "label": "Implement Code-Level Security Checks"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_234",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.13",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.29",
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Conduct application penetration testing. For critical applications, authenticated penetration testing is better suited to finding business logic vulnerabilities than code scanning and automated security testing. Penetration testing relies on the skill of the tester to manually manipulate an application as an authenticated and unauthenticated user.",
+    "label": "Conduct Application Penetration Testing"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_236",
+    "cis_control_id": "16",
+    "cis_safeguard_id": "16.14",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.29"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Conduct threat modeling. Threat modeling is the process of identifying and addressing application security design flaws within a design, before code is created. It is conducted through specially trained individuals who evaluate the application design and gauge security risks for each entry point and access level. The goal is to map out the application, architecture, and infrastructure in a structured way to understand its weaknesses.",
+    "label": "Conduct Threat Modeling"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_237",
+    "cis_control_id": "17",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Incident Response Management"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_239",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.24"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Designate one key person, and at least one backup, who will manage the enterprise’s incident handling process. Management personnel are responsible for the coordination and documentation of incident response and recovery efforts and can consist of employees internal to the enterprise, service providers, or a hybrid approach. If using a service provider, designate at least one person internal to the enterprise to oversee any third-party work. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "label": "Designate Personnel to Manage Incident Handling"
+  },
+  {
+    "id": "CIS_ISO_1764086899338_240",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.20",
+      "A.5.24",
+      "A.5.5",
+      "A.5.6"
+    ],
+    "nis2_article_ids": [
+      "3.5.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Superset",
+    "notes": "[CIS] Establish and maintain contact information for parties that need to be informed of security incidents. Contacts may include internal staff, service vendors, law enforcement, cyber insurance providers, relevant government agencies, Information Sharing and Analysis Center (ISAC) partners, or other stakeholders. Verify contacts annually to ensure that information is up-to-date.\n\n---\n\n[NIS2] The relevant entities shall establish communication plans and procedures:\r\n(a) with the Computer Security Incident Response Teams (CSIRTs) or, where applicable, the competent authorities, related to incident notification;\r\n(b) with relevant internal and external stakeholders.",
+    "label": "Establish and Maintain Contact Information for Reporting Security Incidents"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_244",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.6.8"
+    ],
+    "nis2_article_ids": [
+      "3.3.1",
+      "3.5.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Equivalent",
+    "notes": "[NIS2] Establish and maintain an documented enterprise process for the workforce to report security incidents. The process includes reporting timeframe, personnel to report to, mechanism for reporting, and the minimum information to be reported. Ensure the process is publicly available to all of the workforce. Review annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall put in place a simple mechanism allowing their employees, suppliers, and customers to report suspicious events.\n\n---\n\n[NIS2] The relevant entities shall establish communication plans and procedures:\r\n(a) with the Computer Security Incident Response Teams (CSIRTs) or, where applicable, the competent authorities, related to incident notification;\r\n(b) with relevant internal and external stakeholders.",
+    "label": "Establish and Maintain an Enterprise Process for Reporting Incidents"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_245",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.24",
+      "A.5.26"
+    ],
+    "nis2_article_ids": [
+      "3.5.1",
+      "3.5.2",
+      "3.5.4"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain a documented incident response process that addresses roles and responsibilities, compliance requirements, and a communication plan. Review annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall respond to incidents in accordance with documented procedures and in a timely manner.\n\n---\n\n[NIS2] The incident response procedures shall include the following stages:\r\n(a) incident containment, to prevent the consequences of the incident from spreading;\r\n(b) eradication, to prevent the incident from continuing or reappearing,\r\n(c) recovery from the incident, where necessary.\n\n---\n\n[NIS2] The relevant entities shall log incident response activities, and record evidence.",
+    "label": "Establish and Maintain an Incident Response Process"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_247",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.2",
+      "A.5.24"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Assign key roles and responsibilities for incident response, including staff from legal, IT, information security, facilities, public relations, human resources, incident responders, and analysts. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "label": "Assign Key Roles and Responsibilities"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_249",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.6",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.24"
+    ],
+    "nis2_article_ids": [
+      "3.5.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Determine which primary and secondary mechanisms will be used to communicate and report during a security incident. Mechanisms can include phone calls, emails, secure chat, or notification letters. Keep in mind that certain mechanisms, such as emails, can be affected during a security incident. Review annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] The relevant entities shall establish communication plans and procedures:\r\n(a) with the Computer Security Incident Response Teams (CSIRTs) or, where applicable, the competent authorities, related to incident notification;\r\n(b) with relevant internal and external stakeholders.",
+    "label": "Define Mechanisms for Communicating During Incident Response"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_250",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.7",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.30"
+    ],
+    "nis2_article_ids": [
+      "3.5.5"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Plan and conduct routine incident response exercises and scenarios for key personnel involved in the incident response process to prepare for responding to real-world incidents. Exercises need to test communication channels, decision making, and workflows. Conduct testing on an annual basis, at a minimum.\n\n---\n\n[NIS2] The relevant entities shall test at planned intervals their incident response procedures.",
+    "label": "Conduct Routine Incident Response Exercises"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_251",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.8",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.24",
+      "A.5.27"
+    ],
+    "nis2_article_ids": [
+      "3.6.1",
+      "3.6.2",
+      "3.6.3"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Conduct post-incident reviews. Post-incident reviews help prevent incident recurrence through identifying lessons learned and follow-up action.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall carry out post-incident reviews that shall identify the root cause of the incident and result in lessons learned to reduce the occurrence and consequences of future incidents.\n\n---\n\n[NIS2] The relevant entities shall ensure that post-incident reviews contribute to improving their approach to network and information security, to risk treatment measures, and to incident handling, detection and response procedures.\n\n---\n\n[NIS2] The relevant entities shall review at planned intervals if significant incidents led to post-incident reviews.",
+    "label": "Conduct Post-Incident Reviews"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_253",
+    "cis_control_id": "17",
+    "cis_safeguard_id": "17.9",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.5.24",
+      "A.5.25"
+    ],
+    "nis2_article_ids": [
+      "3.4.1",
+      "3.4.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[CIS] Establish and maintain security incident thresholds, including, at a minimum, differentiating between an incident and an event. Examples can include: abnormal activity, security vulnerability, security weakness, data breach, privacy incident, etc. Review annually, or when significant enterprise changes occur that could impact this Safeguard.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall assess suspicious events to determine whether they constitute incidents and, if so, determine their nature and severity.\n\n---\n\n[NIS2] For the purpose of point 3.4.1, the relevant entities shall act in the following manner:\r\n(a) carry out the assessment based on predefined criteria laid down in advance, and on a triage to determine prioritisation of incident containment and eradication;\r\n(b) assess the existence of recurring incidents as referred to in Article 4 of this Regulation on a quarterly basis;\r\n(c) review the appropriate logs for the purposes of event assessment and classification;\r\n(d) put in place a process for log correlation and analysis, and\r\n(e) reassess and reclassify events in case of new information becoming available or after analysis of previously available information.",
+    "label": "Establish and Maintain Security Incident Thresholds"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_255",
+    "cis_control_id": "18",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "related",
+    "label": "Penetration Testing"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_257",
+    "cis_control_id": "18",
+    "cis_safeguard_id": "18.1",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [
+      "6.5.1",
+      "6.5.2"
+    ],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "[NIS2] Establish and maintain a penetration testing program appropriate to the size, complexity, industry, and maturity of the enterprise. Penetration testing program characteristics include scope, such as network, web application, Application Programming Interface (API), hosted services, and physical premise controls; frequency; limitations, such as acceptable hours, and excluded attack types; point of contact information; remediation, such as how findings will be routed internally; and retrospective requirements.\n\n---\n\n[NIS2] [NIS2] The relevant entities shall establish, implement and apply a policy and procedures for security testing.\n\n---\n\n[NIS2] The relevant entities shall:\r\n(a) establish, based on the risk assessment, the need, scope, frequency and type of security tests;\r\n(b) carry out security tests according to a documented test methodology, covering the components identified as relevant for secure operation in a risk analysis;\r\n(c) document the type, scope, time and results of the tests, including assessment of criticality and mitigating actions for each finding;\r\n(d) apply mitigating actions in case of critical findings.",
+    "label": "Establish and Maintain a Penetration Testing Program"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_258",
+    "cis_control_id": "18",
+    "cis_safeguard_id": "18.2",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Perform periodic external penetration tests based on program requirements, no less than annually. External penetration testing must include enterprise and environmental reconnaissance to detect exploitable information. Penetration testing requires specialized skills and experience and must be conducted through a qualified party. The testing may be clear box or opaque box.",
+    "label": "Perform Periodic External Penetration Tests"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_259",
+    "cis_control_id": "18",
+    "cis_safeguard_id": "18.3",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Remediate penetration test findings based on the enterprise’s documented vulnerability remediation process. This should include determining a timeline and level of effort based on the impact and prioritization of each identified finding.",
+    "label": "Remediate Penetration Test Findings"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_260",
+    "cis_control_id": "18",
+    "cis_safeguard_id": "18.4",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Validate security measures after each penetration test. If deemed necessary, modify rulesets and capabilities to detect the techniques used during testing.",
+    "label": "Validate Security Measures"
+  },
+  {
+    "id": "CIS_ISO_1764086899339_261",
+    "cis_control_id": "18",
+    "cis_safeguard_id": "18.5",
+    "iso_27001_clause_ids": [],
+    "iso_27001_annex_a_ids": [
+      "A.8.8"
+    ],
+    "nis2_article_ids": [],
+    "sources": [
+      "CIS_ISO",
+      "CIS_NIS2"
+    ],
+    "relationship_type": "Subset",
+    "notes": "Perform periodic internal penetration tests based on program requirements, no less than annually. The testing may be clear box or opaque box.",
+    "label": "Perform Periodic Internal Penetration Tests"
+  }
+]
