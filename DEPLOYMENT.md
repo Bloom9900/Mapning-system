@@ -73,12 +73,12 @@ Note: The Vercel build will automatically build the frontend. You don't need to 
 2. Go to [vercel.com](https://vercel.com)
 3. Import your repository
 4. **IMPORTANT**: In Vercel project settings → General → Root Directory:
-   - Set **Root Directory** to: `frontend`
-   - This tells Vercel to treat the `frontend` folder as the project root
-   - The build command and output directory will then be relative to `frontend`
+   - **Option A (Recommended)**: Set **Root Directory** to: `frontend`
+     - This tells Vercel to treat the `frontend` folder as the project root
+     - Then update `vercel.json` outputDirectory to: `dist` (instead of `frontend/dist`)
+   - **Option B**: Leave Root Directory as root (default)
+     - Keep `vercel.json` as is with `outputDirectory: "frontend/dist"`
 5. Deploy!
-
-**Note**: The `vercel.json` is configured to work with `rootDirectory: "frontend"`. If you don't set this in the dashboard, the build will fail.
 
 ## Important Notes
 
